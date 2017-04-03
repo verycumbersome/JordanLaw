@@ -1,0 +1,71 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+}
+
+body {
+    margin: 0;
+    background-image: url("images/Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    /*font: 'roboto';*/
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*padding-left: 20px;*/
+    overflow: hidden;
+    background-color: #333;
+}
+
+li.menuitem{
+    float: left;
+}
+
+li.menuitem a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    white-space: normal;
+}
+
+li.menuitem a:hover {
+    background-color: #111;
+}
+
+.missionstatement {
+    white-space: nowrap
+    width: 70%;
+}
+
+#main {
+    margin: auto;
+    width: 100%;
+}
+
+#header {
+    display: table;
+    /*vertical-align: top;*/
+    width: 100%;
+    white-space: nowrap;
+}
+
+#logo {
+    position: relative;
+    display: inline-block;
+}
+
+#menu {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+#title {
+    text-align: center;
+}
+
