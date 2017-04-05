@@ -1,6 +1,5 @@
-<!DOCTYPE html>
-<html lang="en-us">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="google-site-verification" content="q5pMYCKHXXdw-TOgAO4i9PMiwcodukNgV0aIPpm_S6Q" />
@@ -11,7 +10,7 @@
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="javascript/main.js"></script>
+<!--<script type="text/javascript" src="javascript/jquery-3.2.0.min.js"></script>-->
 </head>
 
 <body>
@@ -19,15 +18,62 @@
     <div id="logo">
         <img src="images/jordanlaw.png"></img>
     </div>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+    	// $(document).ready(function() {
+    	// 	$("#main").fadeOut(0);
+    		
+    	// 	$("#aboutuswrapper").hover(function() {
+     //   	$("#aboutusdropdown").slideDown('slow');
+        	
+    	// 	}, function() {
+     //   		$("#aboutusdropdown").slideUp('slow');
+    	// 	});
+	    // 		$("#header").fadeOut(0);
+	    // 		$("#header").fadeIn(5000);
+    	// });
     
+    </script>
     <div id="menu">
         <div id="aboutuswrapper" class="menuitem">
-            <li class="menuitem" id="aboutus"><a>About Us</a></li>
-            
+            <div id="aboutusbar" class="bar">About Us</div>
+			<div id="aboutusdropdown" class="dropdown">
+				<ul class=dropdownwrapper>
+					<li><a href="#aboutus">1</a></li>
+					<li><a href="#aboutus2">2</a></li>
+				</ul>
+			</div>
         </div>
-        <li class="menuitem" id="practice"><a href="#practice">Practice</a></li>
-        <li class="menuitem" id="blog"><a href="#blog">Blog</a></li>
-        <li class="menuitem" id="contact"><a href="#contact">Contact</a></li>
+        
+        <div id="practiceswrapper" class="menuitem">
+            <div id="practicesbar" class="bar">Practices</div>
+			<div id="practicesdropdown" class="dropdown">
+				<ul class=dropdownwrapper>
+					<li><a>1</a></li>
+					<li><a>2</a></li>
+				</ul>
+			</div>
+        </div>
+        
+        <div id="blogwrapper" class="menuitem">
+            <div id="blogbar" class="bar">Blog</div>
+			<div id="blogdropdown" class="dropdown">
+				<ul class=dropdownwrapper>
+					<li><a>1</a></li>
+					<li><a>2</a></li>
+				</ul>
+			</div>
+        </div>
+        
+        <div id="contactwrapper" class="menuitem">
+            <div id="contactbar" class="bar">Contact</div>
+			<div id="contactdropdown" class="dropdown">
+				<ul class=dropdownwrapper>
+					<li><a>1</a></li>
+					<li><a>2</a></li>
+				</ul>
+			</div>
+        </div>
     </div>
 </div>
 
@@ -39,44 +85,6 @@
      We know that contacting an attorney often coincides with emotional life issues.  We strive for clarity, integrity and connection with our clients, and believe that the best results are obtained when clients are actively involved in their own representation.
 	</p>
 </div>
-
-<!--<div id="menu">-->
-<!--	<div class="menuitem" id="social">-->
-<!--		<div id="socialbar" class="bar">Social</div>-->
-<!--			<div id="socialdropdown" class="dropdown">-->
-<!--				<ul id=dropdownwrapper>-->
-<!--					<li><a class="fa fa-twitter" href="https://twitter.com/khai_dreams"></a></li>-->
-<!--					<li><a class="fa fa-instagram" href="https://instagram.com/khai_dreams"></a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--	</div>-->
-<!--	<div class="menuitem" id="listen">-->
-<!--		<div id="listenbar" class="bar">Listen</div>-->
-<!--			<div id="listendropdown" class="dropdown">-->
-<!--				<ul id=dropdownwrapper>-->
-<!--					<li><a class="fa fa-bandcamp" href="https://khaidreams.bandcamp.com/"></a></li>-->
-<!--					<li><a class="fa fa-soundcloud" href="https://soundcloud.com/khai_dreams"></a></li>-->
-<!--					<li><a class="fa fa-apple" href="https://itunes.apple.com/us/artist/khai-dreams/id1198269778"></a></li>-->
-<!--					<li><a class="fa fa-spotify" href="https://open.spotify.com/artist/0lawSNBxNgJFQYJnQzLH8c"></a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--	</div>-->
-<!--	<div class="menuitem" id="store">-->
-<!--		<div id="storebar" class="bar">Store</div>-->
-<!--			<div id="storedropdown" class="dropdown">-->
-<!--				<ul id=dropdownwrapper>-->
-<!--					<li class="genericfa" >Coming Soon!</li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--	</div>-->
-<!--	<div class="menuitem" id="contact">-->
-<!--		<div id="contactbar" class="bar">Contact</div>-->
-<!--			<div id="contactdropdown" class="dropdown">-->
-<!--				<ul id=dropdownwrapper>-->
-<!--					<li><a id="email" class="fa fa-envelope-o" href="mailto:khaidreams@gmail.com" target="_top"></a></li>-->
-<!--				</ul>-->
-<!--			</div>-->
-<!--	</div>-->
 
 </body>
 </html>

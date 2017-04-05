@@ -7,7 +7,6 @@ html {
 body {
     margin: 0;
     background-image: url("images/Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
-    /*font: 'roboto';*/
 }
 
 ul {
@@ -19,31 +18,32 @@ ul {
     background-color: #333;
 }
 
-li.menuitem{
+.menuitem{
     float: left;
 }
 
-li.menuitem a {
+.bar {
     display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     white-space: normal;
+    background-color: #333;
 }
 
-li.menuitem a:hover {
+.menuitem a:hover {
     background-color: #111;
 }
 
 .missionstatement {
-    white-space: nowrap
+    white-space: nowrap;
     width: 70%;
 }
 
 #main {
     margin: auto;
-    width: 100%;
+    width: 70%;
 }
 
 #header {
@@ -60,12 +60,22 @@ li.menuitem a:hover {
 
 #menu {
     vertical-align: top;
-    position: relative;
+    position: absolute;
     display: inline-block;
     width: 100%;
+    background-color: #333;
 }
 
 #title {
     text-align: center;
 }
 
+.dropdownwrapper {
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+.dropdownwrapper li {
+    width: 100%;
+}
