@@ -33,7 +33,7 @@ ul {
 }
 
 .menuitem a:hover {
-    background-color: #111;
+    background-color: #555;
 }
 
 .missionstatement {
@@ -78,4 +78,17 @@ ul {
 
 .dropdownwrapper li {
     width: 100%;
+}
+
+.dropdownwrapper a {
+    width: 100%;
+    display: block;
+}
+
+.disable-select-recursive * {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }
