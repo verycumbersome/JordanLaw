@@ -1,7 +1,7 @@
 html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; 
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -18,7 +18,7 @@ ul {
     background-color: #333;
 }
 
-.menuitem{
+.menuitem {
     float: left;
 }
 
@@ -41,7 +41,7 @@ ul {
     width: 70%;
 }
 
-#main {
+#content {
     margin: auto;
     width: 70%;
 }
@@ -63,7 +63,7 @@ ul {
     position: absolute;
     display: inline-block;
     width: 100%;
-    background-color: #333;
+    /*background-color: #333;*/
 }
 
 #title {
