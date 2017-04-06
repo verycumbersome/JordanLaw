@@ -1,12 +1,18 @@
 html {
-    font-family: sans-serif;
+    font-family: 'roboto', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
-    background-image: url("images/Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    /*position: absolute;*/
+    background-image: url("../Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /*overflow: hidden;*/
+    /*overflow-y: auto;*/
 }
 
 ul {
@@ -36,38 +42,99 @@ ul {
     background-color: #555;
 }
 
-.missionstatement {
+/*.missionstatement {
     white-space: nowrap;
     width: 70%;
-}
+}*/
 
 #content {
+    padding-top: 30px;
     margin: auto;
-    width: 70%;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+    height: 500px;
+}
+
+#content p{
+    /*white-space: nowrap;*/
+    font-size: 16px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    /*padding-top: 40px;*/
+    width: 75%;
+    background-color: rgba(0,53,95, 0.6);
+}
+
+#content h2{
+    text-align: center;
+    padding: 10px;
+    width: 20%;
+    margin: auto;
+    background-color: rgba(50, 50, 50, 0.7);
 }
 
 #header {
-    display: table;
+    top: 0;
+    color: white;
+    position: fixed;
+    display: inline-block;
     /*vertical-align: top;*/
     width: 100%;
     white-space: nowrap;
 }
 
 #logo {
-    position: relative;
+    top: 0;
+    /*position: relative;*/
     display: inline-block;
 }
 
 #menu {
     vertical-align: top;
-    position: absolute;
+    position: fixed;
     display: inline-block;
     width: 100%;
-    /*background-color: #333;*/
+    height: 46px;
+    background-color: #333;
+}
+
+#slidein {
+    width: 100%;
+    padding-bottom: 30px;
+    /*background-image: url("../eugene-air-pollution-sept-2010-2-rev.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 30% center;*/
+}
+
+#slidein h1{
+    color: white;
+    font-size: 60px;
 }
 
 #title {
-    text-align: center;
+    width: 100%;
+    margin-left: -60%;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    max-width: inherit;
+    margin: 0;
+    padding: 0;
+    padding-top: 100;
+}
+
+#subtitle {
+    width: 100%;
+    text-align: right;
+    margin-left: -80%;
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    padding-top: 100;
 }
 
 .dropdownwrapper {
@@ -82,6 +149,8 @@ ul {
 
 .dropdownwrapper a {
     width: 100%;
+    padding-top: 10px;
+    height: 30px;
     display: block;
 }
 
@@ -91,4 +160,30 @@ ul {
     -moz-user-select: text;
     -o-user-select: text;
     user-select: text;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+footer a{
+    display: inline;
+    color: white;
+    text-decoration: none;
+    -o-transition:.25s;
+    -ms-transition:.25s;
+    -moz-transition:.25s;
+    -webkit-transition:.25s;
+    transition: .25;
+}
+
+footer a:hover{
+    color: #448AFF;
 }

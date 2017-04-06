@@ -1,9 +1,30 @@
-const menuSlideSpeed = 200;
-
 $(document).ready(function() {
-    $("body").fadeOut(0)
-    $("body").fadeIn(1000)
-    
+    const menuSlideSpeed = 500;
+
+    $("#logo").fadeOut(0);
+    $("#logo").fadeIn(1000);
+    $("#menu").fadeOut(0);
+    $("#menu").fadeIn(1000);
+    $("#content h2").fadeOut(0);
+    $("#content h2").fadeIn(2000);
+
+    $("#content p").fadeOut(0);
+    $("#content p2").fadeOut(0);
+    $("#content p3").fadeOut(0);
+
+    $("#title").animate({
+        marginLeft: '40%'
+    }, 1500, 'swing');
+
+    $("#subtitle").animate({
+        marginLeft: '-20%'
+    }, 2000, 'swing', function() {
+        $("#content p").fadeIn(2000);
+    });
+
+    // $("#title").css(
+    //     'text-align', 'center');
+
     // $("#content").fadeOut(0);
     // $("#title").slideUp(0);
 
@@ -14,7 +35,7 @@ $(document).ready(function() {
 
 
     $("#aboutuswrapper").hover(function() {
-        $("#aboutusdropdown").stop().slideDown(menuSlideSpeed);
+        $("#aboutusdropdown").stop(false, false).slideDown(menuSlideSpeed);
     }, function() {
         $("#aboutusdropdown").stop().slideUp(menuSlideSpeed);
     });
