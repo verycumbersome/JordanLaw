@@ -2,12 +2,15 @@ html {
     font-family: 'roboto', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 body {
     margin: 0;
     /*position: absolute;*/
-    background-image: url("../Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    background-image: url("../eugene-air-pollution-sept-2010-2-rev.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -29,13 +32,10 @@ ul {
 }
 
 .bar {
-    box-sizing: border-box;
     display: inline-block;
-    height: inherit;
-    width: inherit;
     color: white;
     text-align: center;
-    padding: 16px 16px 16px 16px;
+    padding: 14px 16px;
     text-decoration: none;
     white-space: normal;
     background-color: #333;
@@ -43,8 +43,6 @@ ul {
 
 .menuitem {
     float: left;
-    height: 100%;
-    margin: auto;
 }
 
 .menuitem a:hover {
@@ -101,7 +99,7 @@ ul {
 
 #logo {
     top: 0;
-    position: inherit;
+    /*position: relative;*/
     display: inline-block;
 }
 
@@ -110,7 +108,7 @@ ul {
     position: fixed;
     display: inline-block;
     width: 100%;
-    height: 65px;
+    height: 46px;
     background-color: #333;
 }
 
@@ -131,8 +129,9 @@ ul {
 
 #title {
     width: 100%;
-    margin-left: -60%;
-    border-bottom: 2px solid #fff;
+    text-align: center;
+    /*margin-left: -60%;*/
+    /*border-bottom: 2px solid #fff;*/
     display: inline-block;
     max-width: inherit;
     margin: 0;
@@ -142,9 +141,9 @@ ul {
 
 #subtitle {
     width: 100%;
-    text-align: right;
-    margin-left: -80%;
-    border-bottom: 2px solid #fff;
+    text-align: center;
+    /*margin-left: -80%;*/
+    /*border-bottom: 2px solid #fff;*/
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -168,22 +167,12 @@ ul {
     display: block;
 }
 
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none; 
-    -moz-user-select: none; 
-    -ms-user-select: none;
-    user-select: none;
+.disable-select-recursive * {
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -o-user-select: text;
+    user-select: text;
 }
 
 footer {

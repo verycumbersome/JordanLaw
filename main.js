@@ -1,25 +1,29 @@
+/*global $*/
 $(document).ready(function() {
     const menuSlideSpeed = 500;
 
     $("#logo").fadeOut(0);
-    $("#logo").fadeIn(1000);
     $("#menu").fadeOut(0);
-    $("#menu").fadeIn(1000);
-    $("#content h2").fadeOut(0);
-    $("#content h2").fadeIn(2000);
-
     $("#content p").fadeOut(0);
-    $("#content p2").fadeOut(0);
-    $("#content p3").fadeOut(0);
+    $("#content h2").fadeOut(0);
+    
+    $("#logo").fadeIn(1000);
+    $("#menu").fadeIn(1000);
+    
+    // $("#content p").fadeIn(1750);
 
     $("#title").animate({
-        marginLeft: '40%'
-    }, 1500, 'swing');
+        marginLeft: '47%'
+    }, 1750, 'swing', function() {
+        // $("#content h2").fadeIn(1000);
+        // $("#content p").fadeIn(1000);
+    });
 
     $("#subtitle").animate({
-        marginLeft: '-20%'
-    }, 2000, 'swing', function() {
-        $("#content p").fadeIn(2000);
+        marginLeft: '-15%'
+    }, 2250, 'swing', function() {
+        $("#content h2").fadeIn(1000);
+        $("#content p").fadeIn(1000);
     });
 
     // $("#title").css(
@@ -51,10 +55,45 @@ $(document).ready(function() {
     }, function() {
         $("#blogdropdown").stop().slideUp(menuSlideSpeed);
     });
-
-    $("#contactwrapper").hover(function() {
-        $("#contactdropdown").stop().slideDown(menuSlideSpeed);
-    }, function() {
-        $("#contactdropdown").stop().slideUp(menuSlideSpeed);
+    
+    
+    function adjustStyle(width) {
+      width = parseInt(width);
+      if (width < 701) {
+        $("#size-stylesheet").attr("href", "css/mobile.css");
+      } else if (width < 900) {
+        $("#size-stylesheet").attr("href", "css/main.css");
+      } else {
+         $("#size-stylesheet").attr("href", "css/main.css"); 
+      }
+    }
+    
+    $(function() {
+      adjustStyle($(this).width());
+      $(window).resize(function() {
+        adjustStyle($(this).width());
+      });
     });
+
+});
+
+var header = $('header');
+var range = 200;
+
+$(window).on('scroll', function () {
+  
+    var scrollTop = $(this).scrollTop();
+    var offset = header.offset().top;
+    var height = header.outerHeight();
+    offset = offset + height / 2;
+    var calc = 1 - (scrollTop - offset + range) / range;
+  
+    header.css({ 'opacity': calc });
+  
+    if ( calc > '1' ) {
+      header.css({ 'opacity': 1 });
+    } else if ( calc < '0' ) {
+      header.css({ 'opacity': 0 });
+    }
+  
 });
