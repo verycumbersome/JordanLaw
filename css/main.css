@@ -1,5 +1,5 @@
 html {
-    font-family: 'helvetica', sans-serif;
+    font-family: 'Roboto-thin', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
@@ -12,15 +12,6 @@ body {
     background-position: top center;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*padding-left: 20px;*/
-    overflow: hidden;
-    background-color: #333;
-}
-
 .bar {
     box-sizing: border-box;
     display: inline-block;
@@ -31,18 +22,31 @@ ul {
     padding: 16px 16px 16px 16px;
     text-decoration: none;
     white-space: normal;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.bar.active {
     background-color: #333;
 }
 
 .menuitem {
-    font-size: 16px;
+    vertical-align: middle;
+    font-size: 20px;
     float: left;
     height: 100%;
-    width: 100px;
+    width: 120px;
     margin: auto;
+    line-height: 35px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    
 }
 
 .menuitem a:hover {
+    text-decoration: underline;
+}
+
+.menuitem.active a:hover {
     background-color: #555;
 }
 
@@ -57,7 +61,7 @@ ul {
     overflow: hidden;
     width: 100%;
     color: white;
-    height: 500px;
+    height: 1000px;
 }
 
 #content p{
@@ -103,8 +107,14 @@ ul {
     position: fixed;
     float: left;
     display: inline-block;
-    width: 80%;
-    height: 46px;
+    width: 100%;
+    height: 65px;
+    /*background-color: rgba(50,50,50, 0.5);*/
+    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(50,50,50,1));
+    transition: 0.5s;
+}
+
+#menu.active {
     background-color: #333;
 }
 
@@ -127,7 +137,7 @@ ul {
     max-width: inherit;
     margin: 0;
     padding: 0;
-    padding-top: 45px;
+    padding-top: 20px;
 }
 
 #subtitle {
@@ -138,14 +148,41 @@ ul {
     display: inline-block;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 25vh;
+}
+
+#autoscroll {
+    padding-top: 400px;
+}
+
+.dropdown {
+    margin: auto;
+    /*border: 3px solid red;*/
+    
+}
+
+.dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*padding-left: 20px;*/
+    overflow: hidden;
+    background-color: rgba(50,50,50,0.5);
+}
+
+.dropdown ul.active {
+    background-color: #333;
 }
 
 .dropdownwrapper {
+    border-radius: 10px 10px 10px 10px;
     font-size: 16px;
     text-align: center;
     color: white;
     z-index: 100;
+    width: 140%;
+    left: 50%;
+    /*border: 3px solid blue;*/
 }
 
 .dropdownwrapper li {
@@ -154,9 +191,10 @@ ul {
 
 .dropdownwrapper a {
     width: 100%;
-    padding-top: 10px;
+    position: relative;
+    padding: 5px 0px 5px 0px;
     height: 30px;
-    display: block;
+    display: inline-block;
     color: white;
     text-decoration: none;
     border: 0.5px solid #555;
@@ -184,10 +222,10 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px;
-    bottom: 0px;
+    bottom: 0;
     width: 100%;
     margin: auto;
-    position: absolute;
+    position: relative;
     background-color: rgba(50, 50, 50, 0.7);
 }
 
