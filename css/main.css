@@ -1,18 +1,15 @@
 html {
-    font-family: 'roboto', sans-serif;
+    font-family: 'helvetica', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
-    /*position: absolute;*/
     background-image: url("../Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    /*overflow: hidden;*/
-    /*overflow-y: auto;*/
+    background-position: top center;
 }
 
 ul {
@@ -22,10 +19,6 @@ ul {
     /*padding-left: 20px;*/
     overflow: hidden;
     background-color: #333;
-}
-
-.fa-envelope-o {
-    color:white;
 }
 
 .bar {
@@ -42,8 +35,10 @@ ul {
 }
 
 .menuitem {
+    font-size: 16px;
     float: left;
     height: 100%;
+    width: 100px;
     margin: auto;
 }
 
@@ -57,7 +52,7 @@ ul {
 }*/
 
 #content {
-    padding-top: 30px;
+    padding-top: 80px;
     margin: auto;
     overflow: hidden;
     width: 100%;
@@ -94,25 +89,21 @@ ul {
     color: white;
     position: fixed;
     display: inline-block;
-    /*vertical-align: top;*/
     width: 100%;
-    white-space: nowrap;
+    transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
 #logo {
-    top: 0;
-    vertical-align: top;
-    position: inherit;
-    display: inline-block;
-    max-width: 100%;
-    width: auto;
+    float: left;
+    margin: auto;
 }
 
 #menu {
     vertical-align: top;
     position: fixed;
+    float: left;
     display: inline-block;
-    width: 100%;
+    width: 80%;
     height: 46px;
     background-color: #333;
 }
@@ -120,11 +111,7 @@ ul {
 #slidein {
     width: 100%;
     padding-bottom: 30px;
-    line-height: 0.7;
-    /*background-image: url("../eugene-air-pollution-sept-2010-2-rev.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 30% center;*/
+    line-height: 0.69;
 }
 
 #slidein h1{
@@ -155,6 +142,7 @@ ul {
 }
 
 .dropdownwrapper {
+    font-size: 16px;
     text-align: center;
     color: white;
     z-index: 100;
@@ -169,6 +157,9 @@ ul {
     padding-top: 10px;
     height: 30px;
     display: block;
+    color: white;
+    text-decoration: none;
+    border: 0.5px solid #555;
 }
 
 .noselect {
@@ -196,7 +187,7 @@ footer {
     bottom: 0px;
     width: 100%;
     margin: auto;
-    position: fixed;
+    position: absolute;
     background-color: rgba(50, 50, 50, 0.7);
 }
 

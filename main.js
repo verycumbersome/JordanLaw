@@ -2,11 +2,16 @@
 $(document).ready(function() {
     const menuSlideSpeed = 500;
 
-    $("#logo").fadeOut(0);
-    $("#menu").fadeOut(0);
+    // $("#logo").fadeOut(0);
+    // $("#menu").fadeOut(0);
+    
+    $("#header").fadeOut(0);
+    
+    $("#header").fadeIn(2000);
+    
     $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
-
+    
     $("#logo").fadeIn(1000);
     $("#menu").fadeIn(1000, function() {
         $("#content h2").fadeIn(1000);
@@ -115,7 +120,7 @@ $(document).ready(function() {
 
 });
 
-var header = $('header');
+var header = $('#header');
 var range = 200;
 
 $(window).on('scroll', function () {
