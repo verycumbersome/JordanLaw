@@ -3,9 +3,6 @@ $(document).ready(function() {
     $("html,body").animate({scrollTop: 0}, 100);
     
     const menuSlideSpeed = 500;
-
-    // $("#logo").fadeOut(0);
-    // $("#menu").fadeOut(0);
     
     $("#header").fadeOut(0);
     
@@ -43,7 +40,12 @@ $(document).ready(function() {
     $("#practicesdropdown").slideUp(0);
     $("#blogdropdown").slideUp(0);
     $("#contactdropdown").slideUp(0);
-
+    
+    $("#scrolldown").click(function() {
+        $('html,body').stop(true, false).animate({
+            scrollTop: $("footer").offset().top},
+            2000);
+    });
 
     $("#aboutuswrapper").hover(function() {
         $("#aboutusdropdown").stop(false, false).slideDown(menuSlideSpeed);
@@ -76,19 +78,13 @@ $(document).ready(function() {
             marginLeft: '0%',
             borderBottom: '0px solid #fff',
             textAlign: 'center'
-        }, 300, 'swing', function() {
-            // $("#content h2").fadeIn(1000);
-            // $("#content p").fadeIn(1000);
-        });
+        }, 300, 'swing');
 
         $("#subtitle").stop().animate({
             marginLeft: '0%',
             borderBottom: '0px solid #fff',
             textAlign: 'center'
-        }, 300, 'swing', function() {
-            // $("#content h2").fadeIn(1000);
-            // $("#content p").fadeIn(1000);
-        });
+        }, 300, 'swing');
 
         // $("#logo").stop().animate({
         //     width: '300px'
@@ -132,12 +128,14 @@ $(window).scroll(function(event){
     if (yOffset > breakpoint){
         $("#menu").addClass('active');
         $(".menuitem").addClass('active');
-        $(".dropdown ul").addClass('active');
+        $(".dropdown").addClass('active');
+        $(".dropdownwrapper").addClass('active');
         
     }else{
         $("#menu").removeClass('active');
         $(".menuitem").removeClass('active');
-        $(".dropdown ul").removeClass('active');
+        $(".dropdown").removeClass('active');
+        $(".dropdownwrapper").removeClass('active');
         
     }
     

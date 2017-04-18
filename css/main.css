@@ -33,7 +33,7 @@ body {
     vertical-align: middle;
     font-size: 20px;
     float: left;
-    height: 100%;
+    height: 95%;
     width: 120px;
     margin: auto;
     line-height: 35px;
@@ -48,12 +48,76 @@ body {
 
 .menuitem.active a:hover {
     background-color: #555;
+    text-decoration: none;
 }
 
-/*.missionstatement {
-    white-space: nowrap;
-    width: 70%;
-}*/
+
+.dropdown {
+    /*margin: auto;*/
+    /*z-index: 100;*/
+    
+}
+
+.dropdown:before {
+    content: " ";
+    border-bottom: 11px solid #222;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: -11px;
+    border-bottom-color: white;
+    transition: 0.5s;
+}
+
+.dropdown.active:before {
+    border-bottom-color: #333;
+}
+
+.dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    
+}
+
+.dropdown.active ul {
+    background-color: #333;
+}
+
+.dropdownwrapper {
+    font-size: 16px;
+    text-align: center;
+    /*z-index: 100;*/
+    border-radius: 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+
+.dropdownwrapper.active {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdownwrapper li {
+    width: 100%;
+}
+
+.dropdownwrapper a {
+    width: 100%;
+    position: relative;
+    padding: 5px 0px 5px 0px;
+    height: 30px;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    border-bottom: 0.7px solid #555;
+    transition: 0.5s;
+}
+
+.dropdownwrapper.active a {
+    color: white;
+}
 
 #content {
     padding-top: 80px;
@@ -64,20 +128,7 @@ body {
     height: 1000px;
 }
 
-#content p{
-    /*white-space: nowrap;*/
-    line-height: 30px;
-    font-size: 16px;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    /*padding-top: 40px;*/
-    width: 75%;
-    background-color: rgba(0,53,95, 0.5);
-}
-
-#content h2{
+#content h2 {
     text-align: center;
     padding: 10px;
     width: 20%;
@@ -115,13 +166,41 @@ body {
 }
 
 #menu.active {
-    background-color: #333;
+    background: #333;
+}
+
+#autoscroll {
+    padding-top: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+#autoscroll p {
+    line-height: 30px;
+    font-size: 16px;
+    color: #fff;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 75%;
+    background-color: rgba(0,53,95, 0.5);
+}
+
+#autoscroll a {
+    margin: auto;
+    position: absolute;
+    font-size: 4em;
+    bottom: 0;
+    color: white;
+    text-decoration: none;
 }
 
 #slidein {
     width: 100%;
     padding-bottom: 30px;
     line-height: 0.69;
+    padding-top: 20vh;
 }
 
 #slidein h1{
@@ -131,73 +210,22 @@ body {
 
 #title {
     width: 100%;
-    margin-left: -60%;
+    /*left: 50%;*/
     border-bottom: 2px solid #fff;
     display: inline-block;
     max-width: inherit;
     margin: 0;
     padding: 0;
-    padding-top: 20px;
+    padding-top: 7px;
 }
 
 #subtitle {
     width: 100%;
     text-align: right;
-    margin-left: -80%;
     border-bottom: 2px solid #fff;
     display: inline-block;
     margin: 0;
     padding: 0;
-    padding-top: 25vh;
-}
-
-#autoscroll {
-    padding-top: 400px;
-}
-
-.dropdown {
-    margin: auto;
-    /*border: 3px solid red;*/
-    
-}
-
-.dropdown ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*padding-left: 20px;*/
-    overflow: hidden;
-    background-color: rgba(50,50,50,0.5);
-}
-
-.dropdown ul.active {
-    background-color: #333;
-}
-
-.dropdownwrapper {
-    border-radius: 10px 10px 10px 10px;
-    font-size: 16px;
-    text-align: center;
-    color: white;
-    z-index: 100;
-    width: 140%;
-    left: 50%;
-    /*border: 3px solid blue;*/
-}
-
-.dropdownwrapper li {
-    width: 100%;
-}
-
-.dropdownwrapper a {
-    width: 100%;
-    position: relative;
-    padding: 5px 0px 5px 0px;
-    height: 30px;
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    border: 0.5px solid #555;
 }
 
 .noselect {
