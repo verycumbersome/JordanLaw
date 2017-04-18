@@ -85,7 +85,7 @@ $(document).ready(function() {
 
          $("#logo").stop(true, false).animate({
              width: 'auto'
-         }, 300, 'swing');
+         }, 300);
 
       }
     }
