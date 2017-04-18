@@ -45,9 +45,6 @@ $(document).ready(function() {
     }, function() {
         $("#blogdropdown").stop().slideUp(menuSlideSpeed);
     });
-    
-    // var scrollDiv = document.getElementById('yourDivId');  
-    // scrollDiv.scrollTop = scrollDiv.scrollHeight;
 
 
     function adjustStyle(width) {
@@ -67,9 +64,9 @@ $(document).ready(function() {
             textAlign: 'center'
         }, 300, 'swing');
 
-        // $("#logo").stop().animate({
-        //     width: '300px'
-        // }, 300, 'swing');
+        $("#logo").stop(true, false).animate({
+            width: '100%'
+        }, 300, 'swing');
 
       } else {
         //  $("#size-stylesheet").attr("href", "css/main.css");
@@ -86,9 +83,9 @@ $(document).ready(function() {
          }, 2250, 'swing', function() {
          });
 
-        //  $("#logo").stop().animate({
-        //      width: '300px'
-        //  }, 300, 'swing');
+         $("#logo").stop(true, false).animate({
+             width: 'auto'
+         }, 300, 'swing');
 
       }
     }
