@@ -33,7 +33,7 @@ body {
     vertical-align: middle;
     font-size: 20px;
     float: left;
-    height: 95%;
+    height: 94%;
     width: 120px;
     margin: auto;
     line-height: 35px;
@@ -71,7 +71,7 @@ body {
 }
 
 .dropdown.active:before {
-    border-bottom-color: #333;
+    border-bottom-color: #fff;
 }
 
 .dropdown ul {
@@ -84,19 +84,19 @@ body {
 }
 
 .dropdown.active ul {
-    background-color: #333;
+    background-color: #fff;
 }
 
 .dropdownwrapper {
     font-size: 16px;
     text-align: center;
     /*z-index: 100;*/
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 5px 5px 10px 10px;
     transition: 0.5s;
 }
 
 .dropdownwrapper.active {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 5px 5px 10px 10px;
 }
 
 .dropdownwrapper li {
@@ -115,8 +115,14 @@ body {
     transition: 0.5s;
 }
 
+.dropdownwrapper a:before {
+    content:'\27A4';
+    padding-right: 3px;
+    color: rgb(0,53,95);
+}
+
 .dropdownwrapper.active a {
-    color: white;
+    color: black;
 }
 
 #content {

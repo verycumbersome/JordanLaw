@@ -2,7 +2,7 @@
 $(document).ready(function() {
     $("html,body").animate({scrollTop: 0}, 100);
     
-    const menuSlideSpeed = 500;
+    const menuSlideSpeed = 300;
     
     $("#header").fadeOut(0);
     
@@ -16,25 +16,6 @@ $(document).ready(function() {
         $("#content h2").fadeIn(1000);
         $("#content p").fadeIn(1000);
     });
-    // $("#content p").fadeIn(1750);
-
-    // $("#title").animate({
-    //     marginLeft: '47%'
-    // }, 1750, 'swing', function() {
-    // });
-
-    // $("#subtitle").animate({
-    //     marginLeft: '-15%'
-    // }, 2250, 'swing', function() {
-    //     $("#content h2").fadeIn(1000);
-    //     $("#content p").fadeIn(1000);
-    // });
-
-    // $("#title").css(
-    //     'text-align', 'center');
-
-    // $("#content").fadeOut(0);
-    // $("#title").slideUp(0);
 
     $("#aboutusdropdown").slideUp(0);
     $("#practicesdropdown").slideUp(0);
