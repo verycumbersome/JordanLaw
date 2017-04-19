@@ -22,10 +22,23 @@ $(document).ready(function() {
     $("#blogdropdown").slideUp(0);
     $("#contactdropdown").slideUp(0);
     
-    $("#scrolldown").click(function() {
-        $('html,body').stop(true, false).animate({
-            scrollTop: $("footer").offset().top},
-            2000);
+    setInterval(function(){
+        $("#autoscroll a").effect("bounce", { times:3 }, 'normal');
+    }, 2000);
+    
+    var page = $("html, body");
+
+    $("#scrolldown").click(function(e) {
+        
+        page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
+           page.stop();
+        });
+    
+        page.animate({ scrollTop: $(this).position().top }, 'slow', function(){
+           page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
+        });
+    
+       return false; 
     });
 
     $("#aboutuswrapper").hover(function() {
@@ -74,8 +87,6 @@ $(document).ready(function() {
          $("#title").stop().animate({
              marginLeft: '47%'
          }, 1750, 'swing', function() {
-             // $("#content h2").fadeIn(1000);
-             // $("#content p").fadeIn(1000);
          });
 
          $("#subtitle").stop().animate({
@@ -85,7 +96,7 @@ $(document).ready(function() {
 
          $("#logo").stop(true, false).animate({
              width: 'auto'
-         }, 400);
+         }, 300, 'swing');
 
       }
     }
@@ -118,4 +129,3 @@ $(window).scroll(function(event){
     }
     
 });
-
