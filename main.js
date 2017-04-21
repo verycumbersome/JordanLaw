@@ -4,19 +4,18 @@ $(document).ready(function() {
     
     const menuSlideSpeed = 300;
     
-    $("#header").fadeOut(0);
-    
-    $("#header").fadeIn(2000);
+    $(".navbar").fadeOut(0);
     
     $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
     
-    $("#logo").fadeIn(1000);
-    $("#menu").fadeIn(1000, function() {
+    $(".navbar").fadeIn(1500, function() {
         $("#content h2").fadeIn(1000);
         $("#content p").fadeIn(1000);
     });
-
+    
+    
+    
     $("#aboutusdropdown").slideUp(0);
     $("#practicesdropdown").slideUp(0);
     $("#blogdropdown").slideUp(0);
@@ -109,23 +108,19 @@ $(document).ready(function() {
     });
 });
 
-// $(window).scroll(function(event){
+$(window).scroll(function(event){
 
-//     var yOffset = window.pageYOffset;
-//     var breakpoint = 50;
+    var yOffset = window.pageYOffset;
+    var h = window.innerHeight;
+    var breakpoint = h/3;
     
-//     if (yOffset > breakpoint){
-//         $("#menu").addClass('active');
-//         $(".menuitem").addClass('active');
-//         $(".dropdown").addClass('active');
-//         $(".dropdownwrapper").addClass('active');
+    if (yOffset > breakpoint){
+        alert("AHHHHH")
+        $("#navbar").addClass('scrolleddown');
         
-//     }else{
-//         $("#menu").removeClass('active');
-//         $(".menuitem").removeClass('active');
-//         $(".dropdown").removeClass('active');
-//         $(".dropdownwrapper").removeClass('active');
+    }else{
+        $("#navbar").removeClass('scrolleddown');
         
-//     }
+    }
     
-// });
+});

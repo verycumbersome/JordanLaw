@@ -6,17 +6,25 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    background-image: url("../Scenic Southern Oregon 2013  Beautifulvista.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
 }
 .navbar {
     border: 0px;
 }
 
+.navbar.scrolleddown {
+    color: red;
+}
+
 .navbar-brand {
     padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+display: block;
 }
 
 #content {
@@ -50,21 +58,40 @@ body {
 }
 
 #autoscroll {
-    padding-top: 400px;
+    /*padding-top: 400px;*/
     width: 100%;
     /*margin:auto;*/
     text-align: center;
+    bottom: 10px;
+    position: absolute;
+}
+
+#autoscroll a {
+    /*font-size: 4em;*/
+    bottom: 0;
+    color: white;
+    text-decoration: none;
 }
 
 #scrollbox {
-    margin: 0 auto !important;
+    top: 0;
+}
+
+#scrollbox .glyphicon {
+    font-size: 25px;
+}
+
+#scrolldown {
+    /*position: absolute;*/
+    font-size: 4em;
+    position: absolute;
+    margin-left: -22px;
+    margin-bottom: -14px;
 }
 
 #scrolldownarrow {
     z-index: -1;
-    font-size: 8px;
-    margin-left: 16px;
-    margin-bottom: 30px;
+    display: block;
 }
 
 #content p {
@@ -75,17 +102,9 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
+    bottom: -300px;
     width: 75%;
     background-color: rgba(0,53,95, 0.5);
-}
-
-#autoscroll a {
-    /*margin: auto;*/
-    position: absolute;
-    font-size: 4em;
-    bottom: 0;
-    color: white;
-    text-decoration: none;
 }
 
 #slidein {
