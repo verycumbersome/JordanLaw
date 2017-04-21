@@ -6,133 +6,27 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../Eugene-Cityscape-at-Dusk-by-Jeff-Green.jpg");
+    background-image: url("../Scenic Southern Oregon 2013  Beautifulvista.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
 }
-
-.bar {
-    box-sizing: border-box;
-    display: inline-block;
-    height: inherit;
-    width: inherit;
-    color: white;
-    text-align: center;
-    padding: 16px 16px 16px 16px;
-    text-decoration: none;
-    white-space: normal;
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.bar.active {
-    background-color: #333;
-}
-
-.menuitem {
-    vertical-align: middle;
-    font-size: 18px;
-    float: left;
-    height: 94%;
-    width: 120px;
-    margin: auto;
-    /*line-height: 35px;*/
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    
-}
-
-.menuitem.active {
-    height: 100%;
-}
-
-.menuitem a:hover {
-    text-decoration: underline;
-}
-
-.menuitem.active a:hover {
-    background-color: #555;
-    text-decoration: none;
-}
-
-
-.dropdown {
-    /*margin: auto;*/
-    /*z-index: 100;*/
-    
-}
-
-.dropdown:before {
-    content: " ";
-    border-bottom: 11px solid #222;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    position: absolute;
-    margin-left: 50px;
-    margin-top: -11px;
-    border-bottom-color: white;
+.navbar {
+    border: 0px;
     transition: 0.5s;
 }
 
-.dropdown.active:before {
-    border-bottom-color: #333;
+.navbar.scrolldown {
+    /*background-color: #333;*/
 }
 
-.dropdown ul {
-    list-style-type: none;
-    margin: 0;
+.navbar-brand {
     padding: 0;
-    overflow: hidden;
-    background-color: white;
-    
 }
 
-.dropdown.active ul {
-    background-color: #333;
-}
-
-.dropdownwrapper {
-    font-size: 16px;
-    text-align: center;
-    /*z-index: 100;*/
-    border-radius: 5px 5px 10px 10px;
-    transition: 0.5s;
-}
-
-.dropdownwrapper.active {
-    border-radius: 0px 0px 0px 0px;
-}
-
-.dropdownwrapper li {
-    width: 100%;
-}
-
-.dropdownwrapper a {
-    width: 100%;
-    position: relative;
-    padding: 10px 0px 5px 0px;
-    height: 30px;
-    display: inline-block;
-    color: black;
-    text-decoration: none;
-    border-bottom: 0.7px solid #555;
-    transition: 0.5s;
-}
-
-.dropdownwrapper a:before {
-    content:'\27A4';
-    padding-right: 3px;
-    color: rgb(0,53,95);
-    transition: 0.5s;
-}
-
-.dropdownwrapper.active a:before {
-    display: none;
-}
-
-.dropdownwrapper.active a {
-    color: white;
-}
+/*.dropdown:hover .dropdown-menu {*/
+/*    display: block;*/
+/*}*/
 
 #content {
     padding-top: 80px;
@@ -164,38 +58,44 @@ body {
     transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-#logo {
-    float: left;
-    margin: auto;
-}
-
-#logo img {
-    width: 100%;
-}
-
-#menu {
-    vertical-align: top;
-    position: fixed;
-    float: left;
-    display: inline-block;
-    width: 100%;
-    height: 54px;
-    /*background-color: rgba(50,50,50, 0.5);*/
-    background: -webkit-linear-gradient(bottom, rgba(0,0,0,0), rgba(50,50,50,1));
-    transition: 0.5s;
-}
-
-#menu.active {
-    background: #333;
-}
-
 #autoscroll {
-    padding-top: 400px;
+    /*padding-top: 400px;*/
     width: 100%;
+    /*margin:auto;*/
     text-align: center;
+    bottom: 10px;
+    position: absolute;
 }
 
-#autoscroll p {
+#autoscroll a {
+    /*font-size: 4em;*/
+    bottom: 0;
+    color: white;
+    text-decoration: none;
+}
+
+#scrollbox {
+    top: 0;
+}
+
+#scrollbox .glyphicon {
+    font-size: 25px;
+}
+
+#scrolldown {
+    /*position: absolute;*/
+    font-size: 4em;
+    position: absolute;
+    margin-left: -22px;
+    margin-bottom: -14px;
+}
+
+#scrolldownarrow {
+    z-index: -1;
+    display: block;
+}
+
+#content p {
     line-height: 30px;
     font-size: 16px;
     color: #fff;
@@ -203,17 +103,9 @@ body {
     text-align: center;
     padding: 20px;
     position: relative;
+    bottom: -300px;
     width: 75%;
     background-color: rgba(0,53,95, 0.5);
-}
-
-#autoscroll a {
-    margin: auto;
-    position: absolute;
-    font-size: 4em;
-    bottom: 0;
-    color: white;
-    text-decoration: none;
 }
 
 #slidein {

@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <link href="css/main.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" /> -->
@@ -17,50 +18,49 @@
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <!--<script type="text/javascript" src="javascript/jquery-3.2.0.min.js"></script>-->
     <script id="javascript" type="text/javascript" src="/main.js"></script>
 </head>
 
 <body>
-    <div id="header" class="noselect noselect-recursive">
-        <div id="logo">
-            <img src="images/jordanlaw.png"></img>
+<nav class="navbar navbar-inverse navbar-fixed-top noselect noselect-recursive">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+            <a class="navbar-brand" href="#"><img src="images/jordanlaw.png"></a>
         </div>
-
-        <div id="menu" class="noselect-recursive">
-            <div id="aboutuswrapper" class="menuitem">
-                <a id="aboutusbar" class="bar" href="#aboutus">About Us</a>
-            </div>
-
-            <div id="practiceswrapper" class="menuitem">
-                <div id="practicesbar" class="bar">Practices</div>
-                <div id="practicesdropdown" class="dropdown">
-                    <ul class="dropdownwrapper">
-                        <li><a href="#estate">Estate</a></li>
-                        <li><a href="#juvenile">Juvenile</a></li>
-                        <li><a href="#criminal">Criminal</a></li>
-                        <li><a href="#property">Property</a></li>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown people">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
+                    <ul class="dropdown-menu people">
+                        <li><a href="#">Susan Jordan</a></li>
+                        <li><a href="#">Other Lady</a></li>
                     </ul>
-                </div>
-            </div>
-
-            <div id="blogwrapper" class="menuitem">
-                <div id="blogbar" class="bar">People</div>
-                <div id="blogdropdown" class="dropdown">
-                    <ul class=dropdownwrapper>
-                        <li><a href="#blog1">Susan Jordan</a></li>
-                        <li><a href="#blog2">asdf lady</a></li>
+                </li>
+                <li class="dropdown practices">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Practices<span class="caret"></span></a>
+                    <ul class="dropdown-menu practices">
+                        <li><a href="#">Estate</a></li>
+                        <li><a href="#">Juvenile</a></li>
+                        <li><a href="#">Criminal</a></li>
                     </ul>
-                </div>
-            </div>
-
-            <div id="contactwrapper" class="menuitem">
-                <a id="contactbar" class="bar" href="mailto:susanjordan.attorney@gmail.com">Contact</a>
-            </div>
-
+                </li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
         </div>
-        <!-- End Menu -->
     </div>
+</nav>
     <!-- End Header -->
 
     <div id="content">
@@ -69,14 +69,18 @@
             <h1 id="title" class="noselect noselect-recursive">Our Business</h1>
         </div>
         
-        <div id="autoscroll">
-            <a id="scrolldown" class="fa fa-square-o" href="#footer"></a>
-            <p id="missionstatement">
+        <div id="autoscroll" class="noselect noselect-recursive">
+            <div id=scrollbox>
+                <a id="scrolldown" class="fa fa-square-o" href="#footer"></a>
+                <a id="scrolldownarrow" class="glyphicon glyphicon-chevron-down"></a>
+            </div>
+        </div>
+        
+        <p id="missionstatement">
             At Jordan Law, P.C. we want to build lasting relationships with our clients. We are a small general practice firm that seeks to distinguish itself with exemplary service to clients and dedication to our community. Jordan Law’s founder, Susan Ezzy Jordan,
             has nearly 20 years of experience practicing law in Lane County in a wide range of practice areas, including Estate Planning, Juvenile Law, Criminal Law, Civil Litigation, and Real Property matters and disputes. We know that contacting an
             attorney often coincides with emotional life issues. We strive for clarity, integrity and connection with our clients, and believe that the best results are obtained when clients are actively involved in their own representation.
-            </p>
-        </div>
+        </p>
     </div>
     <footer>© 2016 by Jordan Law, P.C. | <a href="#sitemap">Sitemap</a> | <a href="#legal disclaimer">Legal Disclaimer</a></footer>
     <!-- End Content -->
