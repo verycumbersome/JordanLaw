@@ -24,7 +24,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-inverse navbar-fixed-top">
+<nav class="navbar navbar-inverse navbar-fixed-top noselect noselect-recursive">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -37,16 +37,16 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
+                <li class="dropdown people">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu people">
                         <li><a href="#">Susan Jordan</a></li>
                         <li><a href="#">Other Lady</a></li>
                     </ul>
                 </li>
-                <li class=dropdown>
+                <li class="dropdown practices">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">Practices<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu practices">
                         <li><a href="#">Estate</a></li>
                         <li><a href="#">Juvenile</a></li>
                         <li><a href="#">Criminal</a></li>
@@ -69,7 +69,7 @@
             <h1 id="title" class="noselect noselect-recursive">Our Business</h1>
         </div>
         
-        <div id="autoscroll">
+        <div id="autoscroll" class="noselect noselect-recursive">
             <div id=scrollbox>
                 <a id="scrolldown" class="fa fa-square-o" href="#footer"></a>
                 <a id="scrolldownarrow" class="glyphicon glyphicon-chevron-down"></a>

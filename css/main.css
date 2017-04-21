@@ -13,19 +13,21 @@ body {
 }
 .navbar {
     border: 0px;
+    transition: 0.5s;
 }
 
-.navbar.scrolleddown {
+.navbar.scrolldown {
     color: red;
+    background-color: #333;
 }
 
 .navbar-brand {
     padding: 0;
 }
 
-.dropdown:hover .dropdown-menu {
-display: block;
-}
+/*.dropdown:hover .dropdown-menu {*/
+/*    display: block;*/
+/*}*/
 
 #content {
     padding-top: 80px;
