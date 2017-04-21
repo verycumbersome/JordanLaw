@@ -11,15 +11,19 @@ $(document).ready(function() {
     
     $(".navbar").fadeIn(1500, function() {
         $("#content h2").fadeIn(1000);
-        $("#content p").fadeIn(1000);
     });
     
-    
+    $('.active').removeClass('active');
     
     $("#aboutusdropdown").slideUp(0);
     $("#practicesdropdown").slideUp(0);
     $("#blogdropdown").slideUp(0);
     $("#contactdropdown").slideUp(0);
+    
+    $(".nav a", ".dropdown-menu").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+    });
+
     
     setInterval(function(){
         $("#scrolldownarrow").effect("bounce", { times:3 }, 'normal');
@@ -55,8 +59,6 @@ $(document).ready(function() {
     function adjustStyle(width) {
       width = parseInt(width);
       if (width < 651) {
-        // $("#size-stylesheet").attr("href", "css/mobile.css");
-
         $("#title").stop().animate({
             marginLeft: '0%',
             borderBottom: '0px solid #fff',
@@ -74,7 +76,6 @@ $(document).ready(function() {
         }, 300, 'swing');
 
       } else {
-        //  $("#size-stylesheet").attr("href", "css/main.css");
 
          $("#title").stop().animate({
              marginLeft: '47%'
@@ -109,6 +110,7 @@ $(window).scroll(function(event){
     
     if (yOffset > breakpoint){
         $(".navbar").addClass('scrolldown');
+        $("#content p").fadeIn(1000);
         
     }else{
         $(".navbar").removeClass('scrolldown');

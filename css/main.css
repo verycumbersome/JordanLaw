@@ -17,8 +17,7 @@ body {
 }
 
 .navbar.scrolldown {
-    color: red;
-    background-color: #333;
+    /*background-color: #333;*/
 }
 
 .navbar-brand {
