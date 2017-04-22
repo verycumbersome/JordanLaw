@@ -6,10 +6,16 @@ $(document).ready(function() {
     
     $(".navbar").fadeOut(0);
     
+    $(".header").fadeOut(0);
+    
     $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
     
+    $(".navbar").find(".active").removeClass("active");
+    
     $(".navbar").fadeIn(1500, function() {
+        $(".header").fadeIn(1500);
+        $(".contentbody p").fadeIn(1000);
         $("#content h2").fadeIn(1000);
     });
     
@@ -24,8 +30,8 @@ $(document).ready(function() {
 
     
     setInterval(function(){
-        $("#scrolldownarrow").effect("bounce", { times:3 }, 'normal');
-    }, 2000);
+        $("#scrolldownarrow").effect("bounce", { times:3, easing:"easeInCubic" }, 'normal');
+    }, 1500);
     
     var page = $("html, body");
 
@@ -35,7 +41,7 @@ $(document).ready(function() {
            page.stop();
         });
     
-        page.animate({ scrollTop: $(this).position().top }, 'slow', function(){
+        page.stop().animate({scrollTop: $("footer").position().top}, 'slow', function(){
            page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
         });
     
@@ -53,44 +59,6 @@ $(document).ready(function() {
     }, function() {
         $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
     });
-
-    function adjustStyle(width) {
-      width = parseInt(width);
-      if (width < 651) {
-        $("#title").stop().animate({
-            marginLeft: '0%',
-            borderBottom: '0px solid #fff',
-            textAlign: 'center'
-        }, 300, 'swing');
-
-        $("#subtitle").stop().animate({
-            marginLeft: '0%',
-            borderBottom: '0px solid #fff',
-            textAlign: 'center'
-        }, 300, 'swing');
-
-        $("#logo").stop(true, false).animate({
-            width: '100%'
-        }, 300, 'swing');
-
-      } else {
-
-         $("#title").stop().animate({
-             marginLeft: '47%'
-         }, 1750, 'swing', function() {
-         });
-
-         $("#subtitle").stop().animate({
-             marginLeft: '-15%'
-         }, 2250, 'swing', function() {
-         });
-
-         $("#logo").stop(true, false).animate({
-             width: 'auto'
-         }, 300, 'swing');
-
-      }
-    }
 
     $(function() {
       adjustStyle($(this).width());
