@@ -103,8 +103,8 @@ body {
   animation-name: fadeInLeft; }
 
 .animated {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
@@ -166,6 +166,7 @@ body {
     width: 100%;
     color: white;
     height: 1000px;
+    backgrou
 }
 
 #content h2 {

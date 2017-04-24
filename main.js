@@ -4,7 +4,7 @@ $(document).ready(function() {
     
     const menuSlideSpeed = 300;
     
-    $(".navbar").fadeOut(0);
+    // $(".navbar").fadeOut(0);
     
     $(".header").fadeOut(0);
     
