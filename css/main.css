@@ -122,12 +122,23 @@ body {
     min-height:0;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 767px) {
 
   .navbar {
-      min-height: 65px;
+      /*min-height: 65px;*/
+      border: 0px;
   }
-
+  
+  .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-brand {
+    float:none;
+    padding: 0;
+  }
 }
 
 .navbar.scrolldown {
