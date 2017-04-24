@@ -6,10 +6,6 @@ html {
 
 body {
     margin: 0;
-    background-image: url("../Scenic Southern Oregon 2013  Beautifulvista.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 @-webkit-keyframes slideInDown {
@@ -103,8 +99,8 @@ body {
   animation-name: fadeInLeft; }
 
 .animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
@@ -122,12 +118,23 @@ body {
     min-height:0;
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 767px) {
 
   .navbar {
-      min-height: 65px;
+      /*min-height: 65px;*/
+      border: 0px;
   }
-
+  
+  .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+  .navbar-brand {
+    float:none;
+    padding: 0;
+  }
 }
 
 .navbar.scrolldown {
@@ -146,6 +153,8 @@ body {
 }
 
 #rowleft {
+    margin-top: 60px;
+    margin-left: 60px;
     height: 300px;
     width: 400px;
     display: block;
@@ -153,20 +162,18 @@ body {
 }
 
 #rowright {
-    float; block;
     float: left;
     width: 50%;
     margin: auto;
 }
 
 #content {
-    padding-top: 80px;
+    padding-top: 50px;
     margin: auto;
     overflow: hidden;
     width: 100%;
     color: white;
-    height: 1000px;
-    backgrou
+    height: auto;
 }
 
 #content h2 {
@@ -181,10 +188,16 @@ body {
 
 .contentbody {
     margin-top: 0;
-    background-color: rgba(200, 200, 200, 0.7);
-    width: 90%;
+    background-color: white;
+    /*border-radius: 10px;*/
+    width: 60%;
     margin: auto;
     height: auto;
+    white-space: nowrap;
+    background-image: url("/Scenic Southern Oregon 2013  Beautifulvista.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 10%;
 }
 
 .contentbody p {
@@ -201,7 +214,7 @@ body {
 
 .header{
     text-align: center;
-    color: white;
+    color: inherit;
     font-size: 60px;
     line-height: 0.78;
     font-weight: 400;
@@ -216,7 +229,6 @@ body {
 }
 
 #slidein h1{
-    color: white;
     font-size: 70px;
     line-height: 0.75;
     font-weight: 400;
@@ -269,7 +281,7 @@ body {
 
 #header {
     top: 0;
-    color: white;
+    color: inherit;
     position: fixed;
     display: inline-block;
     width: 100%;
@@ -305,13 +317,17 @@ body {
     /*position: absolute;*/
     font-size: 4em;
     position: absolute;
-    margin-left: -22px;
+    margin-left: -23px;
     margin-bottom: -14px;
 }
 
 #scrolldownarrow {
     z-index: -1;
     display: block;
+}
+
+#statement {
+  /*display: block;*/
 }
 
 #missionstatement {
@@ -321,8 +337,10 @@ body {
     margin: auto;
     text-align: center;
     padding: 20px;
+    margin-top:100px;
+    margin-bottom: 100px;
     position: relative;
-    bottom: -300px;
+    /*margin-bottom: 200px;*/
     width: 75%;
     background-color: rgba(0,53,95, 0.5);
 }

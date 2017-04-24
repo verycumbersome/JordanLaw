@@ -8,6 +8,10 @@ $(document).ready(function() {
     
     $(".header").fadeOut(0);
     
+    $(".contentbody").animate({
+        "width" : "100%"
+    }, 2000);
+    
     $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
     
@@ -30,7 +34,7 @@ $(document).ready(function() {
 
     
     setInterval(function(){
-        $("#scrolldownarrow").effect("bounce", { times:3, easing:"easeInCubic" }, 'normal');
+        $("#scrolldownarrow").stop().effect("bounce", { times:3, easing:"easeInCubic" }, 'normal');
     }, 1500);
     
     var page = $("html, body");
