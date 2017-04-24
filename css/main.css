@@ -164,7 +164,6 @@ body {
 }
 
 #rowright {
-    float; block;
     float: left;
     width: 50%;
     margin: auto;
@@ -176,7 +175,7 @@ body {
     overflow: hidden;
     width: 100%;
     color: white;
-    height: 1000px;
+    height: 100vh;
 }
 
 #content h2 {
@@ -324,6 +323,10 @@ body {
     display: block;
 }
 
+#statement {
+  /*display: block;*/
+}
+
 #missionstatement {
     line-height: 30px;
     font-size: 16px;
@@ -331,8 +334,10 @@ body {
     margin: auto;
     text-align: center;
     padding: 20px;
+    margin-top:100px;
+    margin-bottom: 100px;
     position: relative;
-    bottom: -300px;
+    /*margin-bottom: 200px;*/
     width: 75%;
     background-color: rgba(0,53,95, 0.5);
 }
