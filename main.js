@@ -1,5 +1,16 @@
 /*global $*/
 $(document).ready(function() {
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDzYuYf0cuMhvhsNx2pssoTi97c9R1vrXk",
+        authDomain: "interactive-outdoors.firebaseapp.com",
+        databaseURL: "https://interactive-outdoors.firebaseio.com",
+        projectId: "interactive-outdoors",
+        storageBucket: "interactive-outdoors.appspot.com",
+        messagingSenderId: "434825884803"
+    };
+    firebase.initializeApp(config);
+     
     $("html,body").animate({scrollTop: 0}, 100);
     
     const menuSlideSpeed = 300;
@@ -8,9 +19,9 @@ $(document).ready(function() {
     
     $(".header").fadeOut(0);
     
-    $(".contentbody").animate({
-        "width" : "100%"
-    }, 2000);
+    // $(".contentbody").animate({
+    //     "width" : "100%"
+    // }, 2000);
     
     $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
@@ -45,7 +56,7 @@ $(document).ready(function() {
            page.stop();
         });
     
-        page.stop().animate({scrollTop: $("footer").position().top}, 'slow', function(){
+        page.stop().animate({scrollTop: $("footer").position().top}, 1500, function(){
            page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
         });
     
