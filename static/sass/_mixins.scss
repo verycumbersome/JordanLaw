@@ -1,3 +1,31 @@
+@mixin backgroundImage($imgurl) {
+    background-image: url($imgurl);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@mixin transitions($time) {
+    -o-transition: $time;
+    -ms-transition: $time;
+    -moz-transition: $time;
+    -webkit-transition: $time;
+    transition: $time;
+}
+
+@font-face {
+    font-family: 'oregonregular';
+    src: url('/static/fonts/oregon-webfont.eot');
+    src: url('/static/fonts/oregon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/static/fonts/oregon-webfont.woff2') format('woff2'),
+         url('/static/fonts/oregon-webfont.woff') format('woff'),
+         url('/static/fonts/oregon-webfont.ttf') format('truetype'),
+         url('/static/fonts/oregon-webfont.svg#oregonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);

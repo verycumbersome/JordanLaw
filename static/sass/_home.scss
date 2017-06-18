@@ -1,11 +1,19 @@
+@import "mixins";
+
 html {
-    font-family: 'Roboto-thin', sans-serif;
+    font-family: 'oregonregular';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
 }
 
 body {
     margin: 0;
+    // @include backgroundImage(url("../../Scenic Southern Oregon 2013  Beautifulvista.jpg"));
+    // font-family: 'oregonregular';
+    background-image: url("../../Scenic Southern Oregon 2013  Beautifulvista.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 .navbar {
@@ -49,39 +57,25 @@ body {
 }
 
 #rowleft {
-    margin-top: 60px;
-    margin-left: 60px;
-    margin-bottom: 60px;
-    /*height: 300px;*/
+    height: 300px;
     width: 400px;
     display: block;
     float: left;
 }
 
 #rowright {
-    margin-top: 10%;
     float: left;
-    width: 60%;
+    width: 50%;
     margin: auto;
 }
 
-#contact {
-  font-size: 30px;
-  font-weight: 200;
-  margin: auto;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
 #content {
-    /*padding-top: 50px;*/
+    padding-top: 80px;
     margin: auto;
     overflow: hidden;
     width: 100%;
     color: white;
-    height: auto;
+    height: 100vh;
 }
 
 #content h2 {
@@ -96,31 +90,10 @@ body {
 
 .contentbody {
     margin-top: 0;
-    background-color: #333;
-    padding-top: 50px;
-    /*border-radius: 10px;*/
-    width: auto;
+    background-color: rgba(200, 200, 200, 0.7);
+    width: 90%;
     margin: auto;
     height: auto;
-    white-space: nowrap;    
-    background-color: transparent;
-    z-index: 20;
-}
-
-.background-image {
-    margin-top: 0;
-    background-color: #333;
-    padding-top: 50px;
-    /*border-radius: 10px;*/
-    width: auto;
-    margin: auto;
-    height: auto;
-    white-space: nowrap;    
-    background-image: url("../images/lake.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    // filter: blur(5px);
 }
 
 .contentbody p {
@@ -135,13 +108,9 @@ body {
     background-color: rgba(0,53,95, 0.5);
 }
 
-.contentbody a {
-    color: #4CCCFF;
-}
-
 .header{
     text-align: center;
-    color: inherit;
+    color: white;
     font-size: 60px;
     line-height: 0.78;
     font-weight: 400;
@@ -156,6 +125,7 @@ body {
 }
 
 #slidein h1{
+    color: white;
     font-size: 70px;
     line-height: 0.75;
     font-weight: 400;
@@ -163,21 +133,25 @@ body {
 
 #title {
     width: 100%;
+    border-bottom: 2px solid #fff;
     display: inline-block;
     padding: 0;
     position: relative;
     margin-left: 550px;
     margin-top: 0;
+    font-weight: 600;
     /*border: 3px solid red;*/
 }
 
 #subtitle {
     width: 100%;
+    border-bottom: 2px solid #fff;
     display: inline-block;
     padding: 0;
     position: relative;
     margin-left: -220px;
     text-align: right;
+    font-weight: 800;
     /*border: 3px solid blue;*/
 }
 
@@ -206,7 +180,7 @@ body {
 
 #header {
     top: 0;
-    color: inherit;
+    color: white;
     position: fixed;
     display: inline-block;
     width: 100%;

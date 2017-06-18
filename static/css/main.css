@@ -1,0 +1,852 @@
+@font-face {
+  font-family: 'oregonregular';
+  src: url("/static/fonts/oregon-webfont.eot");
+  src: url("/static/fonts/oregon-webfont.eot?#iefix") format("embedded-opentype"), url("/static/fonts/oregon-webfont.woff2") format("woff2"), url("/static/fonts/oregon-webfont.woff") format("woff"), url("/static/fonts/oregon-webfont.ttf") format("truetype"), url("/static/fonts/oregon-webfont.svg#oregonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 102, ../sass/_mixins.scss */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* line 106, ../sass/_mixins.scss */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+/* line 110, ../sass/_mixins.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/* line 115, ../sass/_mixins.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/* line 119, ../sass/_mixins.scss */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 125, ../sass/_mixins.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 129, ../sass/_mixins.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 3, ../sass/_home.scss */
+html {
+  font-family: 'oregonregular';
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 9, ../sass/_home.scss */
+body {
+  margin: 0;
+  background-image: url("../../Scenic Southern Oregon 2013  Beautifulvista.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 19, ../sass/_home.scss */
+.navbar {
+  border: 0px;
+  /*transition: 0.5s;*/
+  min-height: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 27, ../sass/_home.scss */
+  .navbar {
+    /*min-height: 65px;*/
+    border: 0px;
+  }
+
+  /* line 32, ../sass/_home.scss */
+  .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 38, ../sass/_home.scss */
+  .navbar-brand {
+    float: none;
+    padding: 0;
+  }
+}
+/* line 44, ../sass/_home.scss */
+.navbar.scrolldown {
+  /*background-color: #333;*/
+}
+
+/* line 48, ../sass/_home.scss */
+.navbar-brand {
+  padding: 0;
+}
+
+/* line 52, ../sass/_home.scss */
+.row {
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+  margin: auto;
+}
+
+/* line 59, ../sass/_home.scss */
+#rowleft {
+  height: 300px;
+  width: 400px;
+  display: block;
+  float: left;
+}
+
+/* line 66, ../sass/_home.scss */
+#rowright {
+  float: left;
+  width: 50%;
+  margin: auto;
+}
+
+/* line 72, ../sass/_home.scss */
+#content {
+  padding-top: 80px;
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  height: 100vh;
+}
+
+/* line 81, ../sass/_home.scss */
+#content h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  margin: auto;
+  color: white;
+  bottom: 0;
+  /*background-color: rgba(50, 50, 50, 0.7);*/
+}
+
+/* line 91, ../sass/_home.scss */
+.contentbody {
+  margin-top: 0;
+  background-color: rgba(200, 200, 200, 0.7);
+  width: 90%;
+  margin: auto;
+  height: auto;
+}
+
+/* line 99, ../sass/_home.scss */
+.contentbody p {
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 75%;
+  background-color: rgba(0, 53, 95, 0.5);
+}
+
+/* line 111, ../sass/_home.scss */
+.header {
+  text-align: center;
+  color: white;
+  font-size: 60px;
+  line-height: 0.78;
+  font-weight: 400;
+}
+
+/* line 119, ../sass/_home.scss */
+#slidein {
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 0.69;
+  padding-top: 20vh;
+  /*border: 3px solid green;*/
+}
+
+/* line 127, ../sass/_home.scss */
+#slidein h1 {
+  color: white;
+  font-size: 70px;
+  line-height: 0.75;
+  font-weight: 400;
+}
+
+/* line 134, ../sass/_home.scss */
+#title {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  margin-left: 550px;
+  margin-top: 0;
+  font-weight: 600;
+  /*border: 3px solid red;*/
+}
+
+/* line 146, ../sass/_home.scss */
+#subtitle {
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  margin-left: -220px;
+  text-align: right;
+  font-weight: 800;
+  /*border: 3px solid blue;*/
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 160, ../sass/_home.scss */
+  #title {
+    border-bottom: 0px;
+    text-align: center;
+    left: 0;
+    margin: auto;
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* line 172, ../sass/_home.scss */
+  #subtitle {
+    border-bottom: 0px;
+    text-align: center;
+    left: 0;
+    margin: auto;
+  }
+}
+/* line 181, ../sass/_home.scss */
+#header {
+  top: 0;
+  color: white;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  z-index: 1;
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+/* line 191, ../sass/_home.scss */
+#autoscroll {
+  /*padding-top: 400px;*/
+  width: 100%;
+  /*margin:auto;*/
+  text-align: center;
+  bottom: 10px;
+  position: absolute;
+}
+
+/* line 200, ../sass/_home.scss */
+#autoscroll a {
+  /*font-size: 4em;*/
+  bottom: 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 207, ../sass/_home.scss */
+#scrollbox {
+  top: 0;
+}
+
+/* line 211, ../sass/_home.scss */
+#scrollbox .glyphicon {
+  font-size: 25px;
+}
+
+/* line 215, ../sass/_home.scss */
+#scrolldown {
+  /*position: absolute;*/
+  font-size: 4em;
+  position: absolute;
+  margin-left: -23px;
+  margin-bottom: -14px;
+}
+
+/* line 223, ../sass/_home.scss */
+#scrolldownarrow {
+  z-index: -1;
+  display: block;
+}
+
+/* line 228, ../sass/_home.scss */
+#statement {
+  /*display: block;*/
+}
+
+/* line 232, ../sass/_home.scss */
+#missionstatement {
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  position: relative;
+  /*margin-bottom: 200px;*/
+  width: 75%;
+  background-color: rgba(0, 53, 95, 0.5);
+}
+
+/* line 247, ../sass/_home.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 256, ../sass/_home.scss */
+.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 265, ../sass/_home.scss */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+/* line 276, ../sass/_home.scss */
+footer a {
+  display: inline;
+  color: white;
+  text-decoration: none;
+  -o-transition: .25s;
+  -ms-transition: .25s;
+  -moz-transition: .25s;
+  -webkit-transition: .25s;
+  transition: .25;
+}
+
+/* line 287, ../sass/_home.scss */
+footer a:hover {
+  color: #448AFF;
+}
+
+/* line 1, ../sass/_pages.scss */
+#contact {
+  font-size: 30px;
+  font-weight: 200;
+  margin: auto;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/* line 11, ../sass/_pages.scss */
+#content {
+  /*padding-top: 50px;*/
+  margin: auto;
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  height: auto;
+}
+
+/* line 20, ../sass/_pages.scss */
+#content h2 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  margin: auto;
+  color: white;
+  bottom: 0;
+  /*background-color: rgba(50, 50, 50, 0.7);*/
+}
+
+/* line 30, ../sass/_pages.scss */
+.contentbody {
+  margin-top: 0;
+  background-color: #333;
+  padding-top: 50px;
+  /*border-radius: 10px;*/
+  width: auto;
+  margin: auto;
+  height: auto;
+  white-space: nowrap;
+  background-color: transparent;
+  z-index: 20;
+}
+
+/* line 43, ../sass/_pages.scss */
+.background-image {
+  margin-top: 0;
+  background-color: #333;
+  padding-top: 50px;
+  /*border-radius: 10px;*/
+  width: auto;
+  margin: auto;
+  height: auto;
+  white-space: nowrap;
+}
+
+/* line 55, ../sass/_pages.scss */
+.contentbody a {
+  color: #4CCCFF;
+}
+
+/* line 59, ../sass/_pages.scss */
+.header {
+  text-align: center;
+  color: inherit;
+  font-size: 60px;
+  line-height: 0.78;
+  font-weight: 400;
+}
+
+/* line 67, ../sass/_pages.scss */
+#slidein {
+  width: 100%;
+  padding-bottom: 30px;
+  line-height: 0.69;
+  padding-top: 20vh;
+  /*border: 3px solid green;*/
+}
+
+/* line 75, ../sass/_pages.scss */
+#slidein h1 {
+  font-size: 70px;
+  line-height: 0.75;
+  font-weight: 400;
+}
+
+/* line 81, ../sass/_pages.scss */
+#title {
+  width: 100%;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+  margin-left: 550px;
+  margin-top: 0;
+  /*border: 3px solid red;*/
+}
+
+/* line 91, ../sass/_pages.scss */
+#autoscroll {
+  /*padding-top: 400px;*/
+  width: 100%;
+  /*margin:auto;*/
+  text-align: center;
+  bottom: 10px;
+  position: absolute;
+}
+
+/* line 100, ../sass/_pages.scss */
+#autoscroll a {
+  /*font-size: 4em;*/
+  bottom: 0;
+  color: white;
+  text-decoration: none;
+}
+
+/* line 107, ../sass/_pages.scss */
+#scrollbox {
+  top: 0;
+}
+
+/* line 111, ../sass/_pages.scss */
+#scrollbox .glyphicon {
+  font-size: 25px;
+}
+
+/* line 115, ../sass/_pages.scss */
+#scrolldown {
+  /*position: absolute;*/
+  font-size: 4em;
+  position: absolute;
+  margin-left: -23px;
+  margin-bottom: -14px;
+}
+
+/* line 123, ../sass/_pages.scss */
+#scrolldownarrow {
+  z-index: -1;
+  display: block;
+}
+
+@font-face {
+  font-family: 'oregonregular';
+  src: url("/static/fonts/oregon-webfont.eot");
+  src: url("/static/fonts/oregon-webfont.eot?#iefix") format("embedded-opentype"), url("/static/fonts/oregon-webfont.woff2") format("woff2"), url("/static/fonts/oregon-webfont.woff") format("woff"), url("/static/fonts/oregon-webfont.ttf") format("truetype"), url("/static/fonts/oregon-webfont.svg#oregonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+/* line 102, ../sass/_mixins.scss */
+.slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+}
+
+/* line 106, ../sass/_mixins.scss */
+.slideInUp {
+  -webkit-animation-name: slideInUp;
+  animation-name: slideInUp;
+}
+
+/* line 110, ../sass/_mixins.scss */
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+/* line 115, ../sass/_mixins.scss */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+/* line 119, ../sass/_mixins.scss */
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 125, ../sass/_mixins.scss */
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/* line 129, ../sass/_mixins.scss */
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+/* line 5, ../sass/main.scss */
+html {
+  font-family: 'oregonregular';
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* line 11, ../sass/main.scss */
+body {
+  margin: 0;
+}
+
+/* line 15, ../sass/main.scss */
+.navbar {
+  border: 0px;
+  /*transition: 0.5s;*/
+  min-height: 0;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 23, ../sass/main.scss */
+  .navbar {
+    /*min-height: 65px;*/
+    border: 0px;
+  }
+
+  /* line 28, ../sass/main.scss */
+  .navbar-header {
+    float: left;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* line 34, ../sass/main.scss */
+  .navbar-brand {
+    float: none;
+    padding: 0;
+  }
+}
+/* line 40, ../sass/main.scss */
+.navbar.scrolldown {
+  /*background-color: #333;*/
+}
+
+/* line 44, ../sass/main.scss */
+.navbar-brand {
+  padding: 0;
+}
+
+/* line 48, ../sass/main.scss */
+#header {
+  top: 0;
+  color: white;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  z-index: 1;
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+/* line 59, ../sass/main.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 68, ../sass/main.scss */
+.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 77, ../sass/main.scss */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+/* line 88, ../sass/main.scss */
+footer a {
+  display: inline;
+  color: white;
+  text-decoration: none !important;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+/* line 95, ../sass/main.scss */
+footer a:hover {
+  color: #448AFF;
+}

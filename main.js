@@ -1,15 +1,5 @@
 /*global $*/
 $(document).ready(function() {
-    // Initialize Firebase
-    var config = {
-        apiKey: "AIzaSyDzYuYf0cuMhvhsNx2pssoTi97c9R1vrXk",
-        authDomain: "interactive-outdoors.firebaseapp.com",
-        databaseURL: "https://interactive-outdoors.firebaseio.com",
-        projectId: "interactive-outdoors",
-        storageBucket: "interactive-outdoors.appspot.com",
-        messagingSenderId: "434825884803"
-    };
-    firebase.initializeApp(config);
      
     $("html,body").animate({scrollTop: 0}, 100);
     
@@ -63,17 +53,17 @@ $(document).ready(function() {
        return false; 
     });
 
-    $(".dropdown.people").hover(function() {
-        $(".dropdown-menu.people").stop(false, false).slideDown(menuSlideSpeed);
-    }, function() {
-        $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
-    });
+    // $(".dropdown.people").hover(function() {
+    //     $(".dropdown-menu.people").stop(false, false).slideDown(menuSlideSpeed);
+    // }, function() {
+    //     $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
+    // });
 
-    $(".practices").hover(function() {
-        $(".practices").stop().slideDown(menuSlideSpeed);
-    }, function() {
-        $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
-    });
+    // $(".practices").hover(function() {
+    //     $(".practices").stop().slideDown(menuSlideSpeed);
+    // }, function() {
+    //     $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
+    // });
 
     $(function() {
       adjustStyle($(this).width());
