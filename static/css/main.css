@@ -351,40 +351,29 @@ body {
 
 /* line 197, ../sass/_home.scss */
 #statement {
-  /*display: block;*/
+  min-height: 50vh;
 }
 
 /* line 201, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
-  font-size: 16px;
+  font-size: 1.3em;
   color: #fff;
   margin: auto;
   text-align: center;
   padding: 20px;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+  visibility: visible;
+  position: relative;
   margin-top: 100px;
   margin-bottom: 100px;
-  position: relative;
-  /*margin-bottom: 200px;*/
   width: 75%;
   background-color: #005192;
   border-radius: 30px 0 30px 0;
-  -o-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-}
-/* line 219, ../sass/_home.scss */
-#missionstatement:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  -webkit-transform: translateY(-5px);
-  -moz-transform: translateY(-5px);
-  transform: translateY(-5px);
 }
 
-/* line 227, ../sass/_home.scss */
+/* line 223, ../sass/_home.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -394,7 +383,7 @@ body {
   user-select: none;
 }
 
-/* line 236, ../sass/_home.scss */
+/* line 232, ../sass/_home.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -404,7 +393,7 @@ body {
   user-select: none;
 }
 
-/* line 245, ../sass/_home.scss */
+/* line 241, ../sass/_home.scss */
 footer {
   color: #fff;
   text-align: center;
@@ -416,7 +405,7 @@ footer {
   background-color: rgba(50, 50, 50, 0.7);
 }
 
-/* line 256, ../sass/_home.scss */
+/* line 252, ../sass/_home.scss */
 footer a {
   display: inline;
   color: white;
@@ -428,7 +417,7 @@ footer a {
   transition: .25;
 }
 
-/* line 267, ../sass/_home.scss */
+/* line 263, ../sass/_home.scss */
 footer a:hover {
   color: #448AFF;
 }

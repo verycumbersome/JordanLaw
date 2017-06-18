@@ -1,28 +1,18 @@
 /*global $*/
 $(document).ready(function() {
+    var page = $("html, body");
+    var yOffset = '';
+    var windowHeight;
+    const menuSlideSpeed = 300;
      
     $("html,body").animate({scrollTop: 0}, 100);
-    
-    const menuSlideSpeed = 300;
-    
-    // $(".navbar").fadeOut(0);
-    
     $(".header").fadeOut(0);
     
-    // $(".contentbody").animate({
-    //     "width" : "100%"
-    // }, 2000);
-    
-    $("#content p").fadeOut(0);
     $("#content h2").fadeOut(0);
     
-    $(".navbar").find(".active").removeClass("active");
+    // $("#missionstatement").fadeOut(0);
     
-    $(".navbar").fadeIn(1500, function() {
-        $(".header").fadeIn(1500);
-        $(".contentbody p").fadeIn(1000);
-        $("#content h2").fadeIn(1000);
-    });
+    $(".navbar").find(".active").removeClass("active");
     
     $("#aboutusdropdown").slideUp(0);
     $("#practicesdropdown").slideUp(0);
@@ -32,13 +22,14 @@ $(document).ready(function() {
     $(".navbar a").on("click", function(){
         $(".navbar").find(".active").removeClass("active");
     });
-
+    
+    if (yOffset > $("#autoscroll").position().top){
+        alert("fuck");
+    }
     
     setInterval(function(){
         $("#scrolldownarrow").stop().effect("bounce", { times:3, easing:"easeInCubic" }, 'normal');
     }, 1500);
-    
-    var page = $("html, body");
 
     $("#scrolldown").click(function(e) {
         
@@ -52,39 +43,22 @@ $(document).ready(function() {
     
        return false; 
     });
-
-    // $(".dropdown.people").hover(function() {
-    //     $(".dropdown-menu.people").stop(false, false).slideDown(menuSlideSpeed);
-    // }, function() {
-    //     $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
-    // });
-
-    // $(".practices").hover(function() {
-    //     $(".practices").stop().slideDown(menuSlideSpeed);
-    // }, function() {
-    //     $(".dropdown-menu").stop().slideUp(menuSlideSpeed);
-    // });
-
-    $(function() {
-      adjustStyle($(this).width());
-      $(window).resize(function() {
-        adjustStyle($(this).width());
-      });
-    });
 });
 
 $(window).scroll(function(event){
 
-    var yOffset = window.pageYOffset;
-    var h = window.innerHeight;
-    var breakpoint = h/3;
+    yOffset = window.pageYOffset;
+    windowHeight = window.innerHeight;
+    var breakpoint = windowHeight/3;
     
     if (yOffset > breakpoint){
         $(".navbar").addClass('scrolldown');
-        $("#content p").fadeIn(1000);
-        
-    }else{
+        $("#missionstatement").addClass('slideInUp');
+        $("#missionstatement").addClass('scrolldown');
+    }
+    else{
         $(".navbar").removeClass('scrolldown');
+        // $("#missionstatement").removeClass('scrolldown');
         
     }
     

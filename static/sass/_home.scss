@@ -195,33 +195,29 @@ body {
 }
 
 #statement {
-  /*display: block;*/
+    min-height: 50vh;
 }
 
 #missionstatement {
     line-height: 30px;
-    font-size: 16px;
+    font-size: 1.3em;
     color: #fff;
     margin: auto;
     text-align: center;
     padding: 20px;
-    margin-top:100px;
-    margin-bottom: 100px;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: visible; 
     position: relative;
-    /*margin-bottom: 200px;*/
+    margin-top: 100px;
+    margin-bottom: 100px;
     width: 75%;
     background-color: lighten( rgba(0,53,95, 1), 10% );
     border-radius: 30px 0 30px 0;
-    
-    @include transitions(0.5s);
-    @include box_shadow(1);
+}
 
-    &:hover {
-        @include box_shadow(2);
-        -webkit-transform: translateY(-5px);
-        -moz-transform: translateY(-5px);
-        transform: translateY(-5px);
-    }
+#missionstatement.scrolldown {
+    // margin-top: 100px;
 }
 
 .noselect {
