@@ -352,9 +352,10 @@ body {
 /* line 197, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
+  overflow: hidden;
 }
 
-/* line 201, ../sass/_home.scss */
+/* line 202, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.3em;
@@ -373,7 +374,7 @@ body {
   border-radius: 30px 0 30px 0;
 }
 
-/* line 223, ../sass/_home.scss */
+/* line 224, ../sass/_home.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -383,7 +384,7 @@ body {
   user-select: none;
 }
 
-/* line 232, ../sass/_home.scss */
+/* line 233, ../sass/_home.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -393,7 +394,7 @@ body {
   user-select: none;
 }
 
-/* line 241, ../sass/_home.scss */
+/* line 242, ../sass/_home.scss */
 footer {
   color: #fff;
   text-align: center;
@@ -405,7 +406,7 @@ footer {
   background-color: rgba(50, 50, 50, 0.7);
 }
 
-/* line 252, ../sass/_home.scss */
+/* line 253, ../sass/_home.scss */
 footer a {
   display: inline;
   color: white;
@@ -417,7 +418,7 @@ footer a {
   transition: .25;
 }
 
-/* line 263, ../sass/_home.scss */
+/* line 264, ../sass/_home.scss */
 footer a:hover {
   color: #448AFF;
 }
