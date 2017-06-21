@@ -37,16 +37,18 @@ body {
       border: 0px;
       background-color: black;
   }
-  
+
   .navbar-header {
     padding: 15px;
-    color: green;
+    float: left;
+    text-align: center;
+    width: 100%;
   }
-  
+
   .navbar-brand {
     float: none;
   }
-  
+
   .navbar-brand img{
     width: 75% !important;
   }

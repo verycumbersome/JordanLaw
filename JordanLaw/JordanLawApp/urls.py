@@ -5,5 +5,7 @@ from JordanLawApp import views
 
 urlpatterns = [
     url(r'^$', views.index, name='home'),
-    # url(r'^timeline/', views.timeline, name='timeline'),
+    # url(r'^people/', views.people, name='people'),
+    url(r'^people/(?P<person>)$', views.people, name='people'),
+    # url(r'^people/cindyvance', views.timeline, name='timeline'),
 ]
