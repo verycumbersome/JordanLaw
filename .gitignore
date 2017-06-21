@@ -4,5 +4,8 @@ env
 *.pyc
 __pycache__
 /node_modules
+<<<<<<< HEAD
 /JordanLaw/peopleimages
+=======
+>>>>>>> 0031f4fa9f51a8bb0c795b603550d28a5fc2e3bf
 .sass-cache
