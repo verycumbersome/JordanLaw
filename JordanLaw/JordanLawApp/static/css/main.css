@@ -151,7 +151,7 @@ html {
 /* line 9, ../sass/_home.scss */
 body {
   margin: 0;
-  background-image: url("../../Scenic Southern Oregon 2013  Beautifulvista.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -696,20 +696,22 @@ body {
   /* line 41, ../sass/main.scss */
   .navbar-header {
     padding: 15px;
-    color: green;
+    float: left;
+    text-align: center;
+    width: 100%;
   }
 
-  /* line 46, ../sass/main.scss */
+  /* line 48, ../sass/main.scss */
   .navbar-brand {
     float: none;
   }
 
-  /* line 50, ../sass/main.scss */
+  /* line 52, ../sass/main.scss */
   .navbar-brand img {
     width: 75% !important;
   }
 }
-/* line 56, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 #header {
   top: 0;
   color: white;
@@ -720,7 +722,7 @@ body {
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 67, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -730,7 +732,7 @@ body {
   user-select: none;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -740,7 +742,7 @@ body {
   user-select: none;
 }
 
-/* line 85, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 footer {
   color: #fff;
   text-align: center;
@@ -752,7 +754,7 @@ footer {
   background-color: rgba(50, 50, 50, 0.7);
 }
 
-/* line 96, ../sass/main.scss */
+/* line 98, ../sass/main.scss */
 footer a {
   display: inline;
   color: white;
@@ -764,7 +766,7 @@ footer a {
   transition: 0.25s;
 }
 
-/* line 103, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 footer a:hover {
   color: #448AFF;
 }
