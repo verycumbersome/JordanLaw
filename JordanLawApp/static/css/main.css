@@ -1,3 +1,4 @@
+@import "http://fonts.googleapis.com/css?family=Roboto:300,400,500,700";
 @font-face {
   font-family: 'oregonregular';
   src: url("/static/fonts/oregon-webfont.eot");
@@ -5,6 +6,26 @@
   font-weight: normal;
   font-style: normal;
 }
+/* line 45, ../sass/_mixins.scss */
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 54, ../sass/_mixins.scss */
+.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
@@ -97,31 +118,31 @@
     transform: none;
   }
 }
-/* line 117, ../sass/_mixins.scss */
+/* line 136, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 121, ../sass/_mixins.scss */
+/* line 140, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 125, ../sass/_mixins.scss */
+/* line 144, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 130, ../sass/_mixins.scss */
+/* line 149, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 134, ../sass/_mixins.scss */
+/* line 153, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -129,13 +150,13 @@
   animation-fill-mode: both;
 }
 
-/* line 140, ../sass/_mixins.scss */
+/* line 159, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 144, ../sass/_mixins.scss */
+/* line 163, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
@@ -151,21 +172,17 @@ html {
 /* line 9, ../sass/_home.scss */
 body {
   margin: 0;
+}
+
+/* line 13, ../sass/_home.scss */
+#index {
   background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-/* line 20, ../sass/_home.scss */
-.row {
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-  margin: auto;
-}
-
-/* line 27, ../sass/_home.scss */
+/* line 17, ../sass/_home.scss */
 #rowleft {
   height: 300px;
   width: 400px;
@@ -173,14 +190,14 @@ body {
   float: left;
 }
 
-/* line 34, ../sass/_home.scss */
+/* line 24, ../sass/_home.scss */
 #rowright {
   float: left;
   width: 50%;
   margin: auto;
 }
 
-/* line 40, ../sass/_home.scss */
+/* line 30, ../sass/_home.scss */
 #content {
   top: 20vh;
   margin: auto;
@@ -190,7 +207,7 @@ body {
   height: 100vh;
 }
 
-/* line 49, ../sass/_home.scss */
+/* line 41, ../sass/_home.scss */
 #content h2 {
   text-align: center;
   font-size: 40px;
@@ -201,7 +218,7 @@ body {
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 59, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 .contentbody {
   margin-top: 0;
   background-color: rgba(200, 200, 200, 0.7);
@@ -210,7 +227,7 @@ body {
   height: auto;
 }
 
-/* line 67, ../sass/_home.scss */
+/* line 59, ../sass/_home.scss */
 .contentbody p {
   line-height: 30px;
   font-size: 16px;
@@ -223,7 +240,7 @@ body {
   background-color: rgba(0, 53, 95, 0.5);
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 71, ../sass/_home.scss */
 .header {
   text-align: center;
   color: white;
@@ -232,7 +249,7 @@ body {
   font-weight: 400;
 }
 
-/* line 87, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 #slidein {
   width: 100%;
   padding-bottom: 30px;
@@ -242,7 +259,7 @@ body {
   /*border: 3px solid green;*/
 }
 
-/* line 96, ../sass/_home.scss */
+/* line 88, ../sass/_home.scss */
 #slidein h1 {
   color: white;
   font-size: 70px;
@@ -250,7 +267,7 @@ body {
   font-weight: 400;
 }
 
-/* line 103, ../sass/_home.scss */
+/* line 95, ../sass/_home.scss */
 #title {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -263,7 +280,7 @@ body {
   /*border: 3px solid red;*/
 }
 
-/* line 115, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 #subtitle {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -277,7 +294,7 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 129, ../sass/_home.scss */
+  /* line 121, ../sass/_home.scss */
   #title {
     border-bottom: 0px;
     text-align: center;
@@ -287,7 +304,7 @@ body {
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 141, ../sass/_home.scss */
+  /* line 133, ../sass/_home.scss */
   #subtitle {
     border-bottom: 0px;
     text-align: center;
@@ -295,7 +312,7 @@ body {
     margin: auto;
   }
 }
-/* line 150, ../sass/_home.scss */
+/* line 142, ../sass/_home.scss */
 #header {
   top: 0;
   color: white;
@@ -306,7 +323,7 @@ body {
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 160, ../sass/_home.scss */
+/* line 152, ../sass/_home.scss */
 #autoscroll {
   /*padding-top: 400px;*/
   width: 100%;
@@ -316,7 +333,7 @@ body {
   position: absolute;
 }
 
-/* line 169, ../sass/_home.scss */
+/* line 161, ../sass/_home.scss */
 #autoscroll a {
   /*font-size: 4em;*/
   bottom: 0;
@@ -324,17 +341,17 @@ body {
   text-decoration: none;
 }
 
-/* line 176, ../sass/_home.scss */
+/* line 168, ../sass/_home.scss */
 #scrollbox {
   top: 0;
 }
 
-/* line 180, ../sass/_home.scss */
+/* line 172, ../sass/_home.scss */
 #scrollbox .glyphicon {
   font-size: 25px;
 }
 
-/* line 184, ../sass/_home.scss */
+/* line 176, ../sass/_home.scss */
 #scrolldown {
   /*position: absolute;*/
   font-size: 4em;
@@ -343,19 +360,19 @@ body {
   margin-bottom: -14px;
 }
 
-/* line 192, ../sass/_home.scss */
+/* line 184, ../sass/_home.scss */
 #scrolldownarrow {
   z-index: -1;
   display: block;
 }
 
-/* line 197, ../sass/_home.scss */
+/* line 189, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
   overflow: hidden;
 }
 
-/* line 202, ../sass/_home.scss */
+/* line 194, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.3em;
@@ -374,7 +391,14 @@ body {
   border-radius: 30px 0 30px 0;
 }
 
-/* line 224, ../sass/_home.scss */
+@font-face {
+  font-family: 'oregonregular';
+  src: url("/static/fonts/oregon-webfont.eot");
+  src: url("/static/fonts/oregon-webfont.eot?#iefix") format("embedded-opentype"), url("/static/fonts/oregon-webfont.woff2") format("woff2"), url("/static/fonts/oregon-webfont.woff") format("woff"), url("/static/fonts/oregon-webfont.ttf") format("truetype"), url("/static/fonts/oregon-webfont.svg#oregonregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 45, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -384,7 +408,7 @@ body {
   user-select: none;
 }
 
-/* line 233, ../sass/_home.scss */
+/* line 54, ../sass/_mixins.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -394,122 +418,6 @@ body {
   user-select: none;
 }
 
-/* line 242, ../sass/_home.scss */
-footer {
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  background-color: rgba(50, 50, 50, 0.7);
-}
-
-/* line 253, ../sass/_home.scss */
-footer a {
-  display: inline;
-  color: white;
-  text-decoration: none;
-  -o-transition: .25s;
-  -ms-transition: .25s;
-  -moz-transition: .25s;
-  -webkit-transition: .25s;
-  transition: .25;
-}
-
-/* line 264, ../sass/_home.scss */
-footer a:hover {
-  color: #448AFF;
-}
-
-/* line 1, ../sass/_pages.scss */
-#contact {
-  font-size: 30px;
-  font-weight: 200;
-  margin: auto;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-}
-
-/* line 11, ../sass/_pages.scss */
-.background-image {
-  margin-top: 0;
-  background-color: #333;
-  padding-top: 50px;
-  /*border-radius: 10px;*/
-  width: auto;
-  margin: auto;
-  height: auto;
-  white-space: nowrap;
-}
-
-/* line 23, ../sass/_pages.scss */
-.contentbody a {
-  color: #4CCCFF;
-}
-
-/* line 27, ../sass/_pages.scss */
-.header {
-  text-align: center;
-  color: inherit;
-  font-size: 60px;
-  line-height: 0.78;
-  font-weight: 400;
-}
-
-/* line 35, ../sass/_pages.scss */
-#autoscroll {
-  /*padding-top: 400px;*/
-  width: 100%;
-  /*margin:auto;*/
-  text-align: center;
-  bottom: 10px;
-  position: absolute;
-}
-
-/* line 44, ../sass/_pages.scss */
-#autoscroll a {
-  /*font-size: 4em;*/
-  bottom: 0;
-  color: white;
-  text-decoration: none;
-}
-
-/* line 51, ../sass/_pages.scss */
-#scrollbox {
-  top: 0;
-}
-
-/* line 55, ../sass/_pages.scss */
-#scrollbox .glyphicon {
-  font-size: 25px;
-}
-
-/* line 59, ../sass/_pages.scss */
-#scrolldown {
-  /*position: absolute;*/
-  font-size: 4em;
-  position: absolute;
-  margin-left: -23px;
-  margin-bottom: -14px;
-}
-
-/* line 67, ../sass/_pages.scss */
-#scrolldownarrow {
-  z-index: -1;
-  display: block;
-}
-
-@font-face {
-  font-family: 'oregonregular';
-  src: url("/static/fonts/oregon-webfont.eot");
-  src: url("/static/fonts/oregon-webfont.eot?#iefix") format("embedded-opentype"), url("/static/fonts/oregon-webfont.woff2") format("woff2"), url("/static/fonts/oregon-webfont.woff") format("woff"), url("/static/fonts/oregon-webfont.ttf") format("truetype"), url("/static/fonts/oregon-webfont.svg#oregonregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
@@ -602,31 +510,31 @@ footer a:hover {
     transform: none;
   }
 }
-/* line 117, ../sass/_mixins.scss */
+/* line 136, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 121, ../sass/_mixins.scss */
+/* line 140, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 125, ../sass/_mixins.scss */
+/* line 144, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 130, ../sass/_mixins.scss */
+/* line 149, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 134, ../sass/_mixins.scss */
+/* line 153, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -634,16 +542,218 @@ footer a:hover {
   animation-fill-mode: both;
 }
 
-/* line 140, ../sass/_mixins.scss */
+/* line 159, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 144, ../sass/_mixins.scss */
+/* line 163, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
+}
+
+/* line 2, ../sass/_people.scss */
+body, body * {
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 6, ../sass/_people.scss */
+h1 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.20;
+  font-weight: 700;
+  opacity: 1.0;
+  letter-spacing: -0.72px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* line 18, ../sass/_people.scss */
+h2 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 600;
+  opacity: 1.0;
+  letter-spacing: -0.72px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 30, ../sass/_people.scss */
+h3 {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  opacity: 0.9;
+  letter-spacing: 0;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+/* line 42, ../sass/_people.scss */
+span, p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 2;
+  font-weight: 400;
+  opacity: 0.7;
+  letter-spacing: -0.06px;
+  word-spacing: 0;
+  text-transform: none;
+  margin-top: 0;
+}
+
+/* line 53, ../sass/_people.scss */
+html, body {
+  width: 100%;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 61, ../sass/_people.scss */
+.main-content {
+  height: 100vh !important;
+  background-image: url("https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+/* line 64, ../sass/_people.scss */
+.main-content .link:hover a {
+  color: white;
+}
+
+/* line 73, ../sass/_people.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 78, ../sass/_people.scss */
+.text-container {
+  color: #ffffff;
+}
+
+/* line 82, ../sass/_people.scss */
+.row {
+  flex-direction: row;
+}
+
+/* line 86, ../sass/_people.scss */
+.section {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 97, ../sass/_people.scss */
+.section:first-child {
+  height: 90vh;
+}
+
+/* line 101, ../sass/_people.scss */
+.section:not(:first-child) {
+  padding-top: 125px;
+  background-color: #f3f3f3;
+}
+
+/* line 106, ../sass/_people.scss */
+.profile-pic {
+  transition: .5s;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.75em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 114, ../sass/_people.scss */
+.profile-pic:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  -webkit-transform: translate3d(0, -5%, 0);
+  transform: translate3d(0, -5%, 0);
+}
+
+/* line 120, ../sass/_people.scss */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -o-perspective: 1000;
+  perspective: 1000;
+  margin-right: 15px;
+}
+
+/* line 128, ../sass/_people.scss */
+.profile-pic, .front, .back {
+  width: 144px;
+  height: 144px;
+  border-radius: 50% !important;
+}
+
+/* line 134, ../sass/_people.scss */
+.card-link:hover {
+  color: black;
+}
+
+/* line 138, ../sass/_people.scss */
+.paragraph-text {
+  width: 60%;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+/* line 144, ../sass/_people.scss */
+.card {
+  border: 0px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+/* line 150, ../sass/_people.scss */
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translate3d(0, -0.5%, 0);
+  transform: translate3d(0, -0.5%, 0);
+}
+
+/* line 158, ../sass/_people.scss */
+#works a {
+  color: black;
+}
+/* line 162, ../sass/_people.scss */
+#works a:hover {
+  color: orange;
+}
+
+/* line 167, ../sass/_people.scss */
+#toolbox {
+  background-attachment: fixed;
+  background-image: url("https://newevolutiondesigns.com/images/freebies/google-material-design-wallpaper-20.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 168, ../sass/_people.scss */
+#toolbox h1 {
+  color: white;
 }
 
 /* line 5, ../sass/main.scss */
@@ -659,6 +769,16 @@ body {
 }
 
 /* line 15, ../sass/main.scss */
+a {
+  text-decoration: none !important;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* line 20, ../sass/main.scss */
 .navbar {
   border: 0px;
   min-height: 0;
@@ -669,17 +789,17 @@ body {
   transition: 0.25s;
 }
 
-/* line 21, ../sass/main.scss */
+/* line 26, ../sass/main.scss */
 .navbar.scrolldown {
   background-color: black;
 }
 
-/* line 25, ../sass/main.scss */
+/* line 30, ../sass/main.scss */
 .navbar-brand {
   padding: 0;
 }
 
-/* line 29, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 .navbar-brand img {
   border-radius: 0 0 15px 0;
   max-width: 400px;
@@ -687,13 +807,13 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 36, ../sass/main.scss */
+  /* line 41, ../sass/main.scss */
   .navbar {
     border: 0px;
     background-color: black;
   }
 
-  /* line 41, ../sass/main.scss */
+  /* line 46, ../sass/main.scss */
   .navbar-header {
     padding: 15px;
     float: left;
@@ -701,17 +821,17 @@ body {
     width: 100%;
   }
 
-  /* line 48, ../sass/main.scss */
+  /* line 53, ../sass/main.scss */
   .navbar-brand {
     float: none;
   }
 
-  /* line 52, ../sass/main.scss */
+  /* line 57, ../sass/main.scss */
   .navbar-brand img {
     width: 75% !important;
   }
 }
-/* line 58, ../sass/main.scss */
+/* line 63, ../sass/main.scss */
 #header {
   top: 0;
   color: white;
@@ -722,51 +842,28 @@ body {
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 69, ../sass/main.scss */
-.noselect {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* line 78, ../sass/main.scss */
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* line 87, ../sass/main.scss */
+/* line 73, ../sass/main.scss */
 footer {
-  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #99979c;
   text-align: center;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  background-color: rgba(50, 50, 50, 0.7);
+  background-color: #2a2730;
 }
-
-/* line 98, ../sass/main.scss */
-footer a {
-  display: inline;
-  color: white;
-  text-decoration: none !important;
-  -o-transition: 0.25s;
-  -ms-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-/* line 105, ../sass/main.scss */
+/* line 75, ../sass/main.scss */
 footer a:hover {
-  color: #448AFF;
+  color: white !important;
+}
+/* line 79, ../sass/main.scss */
+footer .bs-docs-footer-links {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+/* line 83, ../sass/main.scss */
+footer .bs-docs-footer-links li {
+  display: inline-block;
+}
+/* line 86, ../sass/main.scss */
+footer .bs-docs-footer-links li + li {
+  margin-left: 15px;
 }

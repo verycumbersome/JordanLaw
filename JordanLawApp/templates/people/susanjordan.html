@@ -1,111 +1,166 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+{% extends 'base.html' %}
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="q5pMYCKHXXdw-TOgAO4i9PMiwcodukNgV0aIPpm_S6Q" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+{% load static %}
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <link href="/css/pages.css" rel="stylesheet" type="text/css" media="screen" />
-    <!-- <link id="size-stylesheet" rel="stylesheet" type="text/css" href="css/mobile.css" media="screen" /> -->
-
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<script type="text/javascript" src="javascript/jquery-3.2.0.min.js"></script>-->
-    <script id="javascript" type="text/javascript" src="/main.js"></script>
-</head>
-
-<body>
-<nav class="navbar navbar-inverse navbar-fixed-top animated slideInDown noselect noselect-recursive">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-            <a class="navbar-brand" href="/index.html"><img src="/images/jordanlaw.png"></a>
+{% block content %}
+<div class='section main-content'>
+    <div class='container animated fadeInRight row'>
+        <div title='me ;)' class='flip-container'>
+            <img class='profile-pic' src='{% static 'images/susan.jpg' %}'></img>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class=""><a href="/index.html">Home</a></li>
-                <li class="dropdown people">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
-                    <ul class="dropdown-menu people">
-                        <li><a href="#">Susan Jordan</a></li>
-                        <li><a href="#">Cindy Vance</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown practices">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Practices<span class="caret"></span></a>
-                    <ul class="dropdown-menu practices">
-                        <li><a href="#">Estate</a></li>
-                        <li><a href="#">Juvenile</a></li>
-                        <li><a href="#">Criminal</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="mailto:susanjordan.attorney@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
-            </ul>
+        <div class='text-container'>
+            <div class='link name'><h2>Susan Jordan</h2></div>
+            <div class='link resume'><h4>Child defense attorney</h4></div>
+            <div class='link email'><h5><a href='mailto:matthewsages@gmail.com'>susanjordan.attorney@gmail.com<a></h5></div>
+            <div class='link twitter'><h5><a href='https://twitter.com/jordanma1998'>541-554-7684</a></h5></div>
         </div>
     </div>
-</nav>
-    <!-- End Header -->
+    <div id="autoscroll" class="animated slideInUp noselect noselect-recursive">
+        <div id=scrollbox>
+            <a id="scrolldown" class="fa fa-square-o" href="#footer"></a>
+            <a id="scrolldownarrow" class="glyphicon glyphicon-chevron-down"></a>
+        </div>
+    </div>
 
-    <div id="content">
-        <div class="background-image">
-            <div class="contentbody">
-                <div class="row">
-                    <div id="rowleft">
-                        <img src="/images/susan.jpg"></img>
+</div>
+<div id='about-me' class='section'>
+    <h1>About Me</h1>
+    <p class='paragraph-text'>
+        Hows it going? My name is Matthew Jordan and thanks for stopping by my website. This is a
+        place to pretty much keep tabs on who I am and what im working on.
+    </p>
+
+    <p class='paragraph-text'>
+        My first program I wrote was in 3rd grade on the Blender 3D engine to make a math-based
+        video game for a school project. I used python exclusively for the first 5 years of my
+        programming experience and to this day it remains one of my favorite languages. A few years
+        later I had moved on from 3D games and onto web development.
+    </p>
+
+    <p class='paragraph-text'>
+        My first web development project I worked on was for my friend's music collective. The
+        project involved port forewarding an Apache web server on a dinky 2009 mac mini running
+        and old version of Snow Leopard. While working on the site, I learned about new languages
+        and software such as HTML, CSS, PHP, and Apache. This early experience proved pivotal to
+        my early love of web dev.
+    </p>
+
+    <p class='paragraph-text'>
+        After graduating into highschool, I discovered the robotics team and quickly joined. While
+        on my team, I not only learned new languages but how to apply them as well. The languages
+        and libraries I learned/improved on during my time there were Java, Javascript, Python, and
+        OpenCv.
+    </p>
+
+
+</div>
+
+<div id='works' class='section'>
+    <h1>Works</h1>
+    <h4><a href='https://github.com/SouthEugeneRoboticsTeam/vision'>FRC Vision Processing</a></h4>
+    <p class='paragraph-text'>
+        This is the vision proccess that our team had running in parrallel on a minnowboard for
+        the 2017 FRC challenge Steamworks. It uses OpenCv to threshold images and return the
+        position relative to the camera and uses the offset to aling the robot.
+    </p>
+    <h4><a href='https://github.com/verycumbersome/InteractiveOutdoorNetwork'>IOP Class Website</a></h4>
+    <p class='paragraph-text'>
+        This website was created to help manage and organize one of my school classes Interactive
+        Outdoor Program. The class is designed to integrate teenagers with the wilderness by
+        allowing and encouraging outdoor activities. One of the goals of this website was to help
+        promote and organize outdoor activity. The website is built on the Django python framework
+        and is being hosted through WSGI on pythonanywhere.com.
+    </p>
+
+</div>
+<div id='toolbox' class='section'>
+    <h1>Toolbox</h1>
+    <div class='container'>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Web Development Tools</h3>
+                    <div class="card-block">
+                        <p class="card-text">Javascript, Jquery, HTML, CSS, SASS, Bootstrap, React, Python, Firebase, Apache, Django, Wordpress, Jekyl, DNS</p>
                     </div>
-                    <div id="rowright">
-                        <div id="about">
-                            <h1 class="header noselect noselect-recursive">Susan Ezzy Jordan</h1>
-                            <h2 class="header noselect noselect-recursive">Attorney at Law</h1>
-                            <div id=contact>
-                                <span>E</span>
-                                <a href="mailto:susanjordan.attorney@gmail.com">susanjordan.attorney@gmail.com</a>
-                                <br>
-                                <span>T</span>
-                                <a href="tel:+1-541-554-7684">541-554-7684</a>
-                                <span>|</span>
-                                <span>F</span>
-                                <a>fax-number-here</a>
-                                <br>
-                                <a class="glyphicon glyphicon-download-alt" href="#">VCARD</a>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Development Tools</h3>
+                    <div class="card-block">
+                        <p class="card-text">C++, Java, OpenCV, Vim, .NET, Unix, Unix Shell, Windows 7/8/10, OOP Language Structure, SQLite, PID</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Robotics Team</h3>
+                    <div class="card-block">
+                        <p class="card-text">4 years experience as senior software developer on the South Eugene Robotics Team(Java, OpenCv, Python, PID, OOP)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Freelance</h3>
+                    <div class="card-block">
+                        <p class="card-text">2 years personal freelance web development(Python, HTML, CSS3, SCSS, Django, Firebase, SQLite)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Personal Programming</h3>
+                    <div class="card-block">
+                        <p class="card-text">Extensive personal programming experience in languages specifically Python and C++</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <h3 class="card-header">Up-to-date Standards</h3>
+                    <div class="card-block">
+                        <p class="card-text">Skilled at writing efficient and readable code using reliable and up-to-date coding standards.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="statement">
-        <p id="missionstatement">
-            Susan graduated from the University of Maine in 1990 with a Bachelor of Sciences degree in Journalism, and obtained her law degree from the University of Oregon School of Law in 1997. During law school she worked as a Judicial Extern in the United States
-            District Court for the District of Oregon, was a summer associate for a litigation firm in Oregon, and worked as a research assistant in the area of Contract Law. She was a Staff Editor on the Journal of Environmental Law and Litigation (JELL),
-            a member of the law student organization, L.A.W. (Land, Air, Water) and played on the City League law school women’s soccer team.
-            <br>---<br> After graduating from the University of Oregon School of Law, Susan clerked for three Lane County Circuit Court judges and then joined a Springfield firm where she practiced for three years, representing the City of Springfield and
-            practicing in the area of civil litigation, with a focus on real property disputes. Susan left the firm and worked briefly for the University of Oregon School of Law before opening her own practice in 2005, originally Susan Ezzy Jordan, LLC, now
-            Jordan Law, P.C.
-            <br>---<br> Susan’s background includes general civil litigation and exposure to a wide range of practice areas including Civil Litigation, Estate Planning, Family Law and matters involving Real Property. In 2007, she began practicing Juvenile
-            Law and became an active member of the Lane County Juvenile Law Consortium. Juvenile Law constitutes a significant portion of her practice and Susan also continues to assist clients with other issues related to her general practice areas.
-            <br>---<br> Jordan Law continues to grow and expand our practice areas to meet our clients’ needs. We also maintain relationships with other attorneys in Lane County and will refer clients when referrals are appropriate to best suit their needs.
-        </p>
+</div>
+<div id='resume' class='section'>
+    <div class="card" style="width: 40rem;">
+        <div class="card-block">
+            <h4 class="card-title">Resume</h4>
+            <h6 class="card-subtitle mb-2">Web Developer</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Full stack developer capable of building a dynamic webpage from the ground up -- from concept, navigation, layout and programming to UX and design.</li>
+                    <li class="list-group-item">Skilled at writing efficient and readable code using reliable and up-to-date coding standards.</li>
+                    <li class="list-group-item">Dedicated, passionate and eager to learn as well as being versed in an array of frameworks and languages.</li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <h6 class="card-subtitle mb-2">Technical Toolbox</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Web Tools: Javascript, Jquery, HTML, CSS3, SCSS, Bootstrap, React JS, Python, Firebase, Github, Apache, Django, C9, WSGI, Wordpress, Jekyl, DNS Hookup</li>
+                    <li class="list-group-item">Development Tools: C++, Java, OpenCV, Vim, .NET, Unix, Unix Shell, Windows 7/8/10, OOP Language Structure, SQLite, PID</li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <h6 class="card-subtitle mb-2">Experience</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">4 years experience as senior software developer on the South Eugene Robotics Team(Java, OpenCv, Python, Unix Shell, WPI library, PID, OOP)</li>
+                    <li class="list-group-item">2 years personal freelance web development(Python, HTML, CSS3, SCSS, Django, Firebase, SQLite)</li>
+                    <li class="list-group-item">Extensive personal programming experience in languages specifically Python and C++</li>
+                    <li class="list-group-item">Developed dynamic site from scratch using Django, WSGI hosting, and basic Web Dev tools (HTML, CSS, Javascript, Jquery). Dynamic site included user accounts, blog posts, file uploads, data storage, static file hosting, with an optimized UX using bootstrap and Django. </li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <a href="https://github.com/verycumbersome" class="btn btn-warning fa fa-github"> Github</a>
+            <a href="mailto:matthewsages@gmail.com" class="btn btn-warning fa fa-envelope-o"> Contact</a>
+        </div>
     </div>
-    <footer>© 2016 by Jordan Law, P.C. | <a href="#sitemap">Sitemap</a> | <a href="#legal disclaimer">Legal Disclaimer</a></footer>
-    <!-- End Content -->
-</body>
-
-</html>
+</div>
+{% endblock %}

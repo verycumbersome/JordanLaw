@@ -41,6 +41,25 @@
 
 }
 
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @-webkit-keyframes slideInDown {
   from {
     -webkit-transform: translate3d(0, -100%, 0);
@@ -66,7 +85,7 @@
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-    
+
 @keyframes slideInUp {
   from {
     -webkit-transform: translate3d(0, 100%, 0);
@@ -113,20 +132,20 @@
     opacity: 1;
     -webkit-transform: none;
     transform: none; } }
-    
+
 .slideInDown {
     -webkit-animation-name: slideInDown;
     animation-name: slideInDown; }
-  
+
 .slideInUp {
     -webkit-animation-name: slideInUp;
     animation-name: slideInUp; }
-    
+
 .fadeInRight {
     -webkit-animation-name: fadeInRight;
-    animation-name: fadeInRight; 
+    animation-name: fadeInRight;
 }
-    
+
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }

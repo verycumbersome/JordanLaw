@@ -8,9 +8,8 @@ def index(request):
     people = Person.objects.all()
     return render(request, "index.html", {'people':people})
 
-def people(request, person):
-    print person
-    return render(request, "people.html", {})
+def susanjordan(request):
+    return render(request, "people/susanjordan.html", {})
 
 def blog(request):
 

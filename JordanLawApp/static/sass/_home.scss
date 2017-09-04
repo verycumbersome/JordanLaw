@@ -8,20 +8,10 @@ html {
 
 body {
     margin: 0;
-    // @include backgroundImage(url("../../Scenic Southern Oregon 2013  Beautifulvista.jpg"));
-    // font-family: 'oregonregular';
-    background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
-
-.row {
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-    margin: auto;
+#index {
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 }
 
 #rowleft {
@@ -44,6 +34,8 @@ body {
     width: 100%;
     color: white;
     height: 100vh;
+
+    // @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 }
 
 #content h2 {
@@ -219,48 +211,4 @@ body {
 
 #missionstatement.scrolldown {
     // margin-top: 100px;
-}
-
-.noselect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-.noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-footer {
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    background-color: rgba(50, 50, 50, 0.7);
-}
-
-footer a{
-    display: inline;
-    color: white;
-    text-decoration: none;
-    -o-transition:.25s;
-    -ms-transition:.25s;
-    -moz-transition:.25s;
-    -webkit-transition:.25s;
-    transition: .25;
-}
-
-footer a:hover{
-    color: #448AFF;
 }

@@ -9,16 +9,14 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' integrity='sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd' crossorigin='anonymous'>    <link href='{% static 'css/main.css' %}' rel='stylesheet' type='text/css' media='screen' />
     <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" media="screen" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
-    <!--<script type="text/javascript" src="javascript/jquery-3.2.0.min.js"></script>-->
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js' integrity='sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1' crossorigin='anonymous'></script>
     <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
 </head>
 
@@ -64,8 +62,23 @@
 {% block content %}
 {% endblock content %}
 
-<footer>© 2016 by Jordan Law, P.C. | <a href="#sitemap">Sitemap</a> | <a href="#legal disclaimer">Legal Disclaimer</a></footer>
-<!-- End Content -->
+<!-- <footer>© 2016 by Jordan Law, P.C. | <a href="#sitemap">Sitemap</a> | <a href="#legal disclaimer">Legal Disclaimer</a></footer> -->
+<footer>
+    <div class='container'>
+        <ul class='bs-docs-footer-links'>
+            <li>© 2016 by Jordan Law, P.C.</li>
+            <li><a href='#about-me'>About</a></li>
+            <li><a href='#resume'>Resume</a></li>
+            <li><a href='mailto:matthewsages@gmail.com'>Contact</a></li>
+        </ul>
+        <div class='row text-muted'>
+            Site maintained and created by <a href='https://twitter.com/jordanma1998'>@jordanma1998</a>
+        </div>
+        <div class='row text-muted'>
+            Follow me on <a href='https://twitter.com/jordanma1998'>Twitter</a> and <a href='https://github.com/verycumbersome'>Github</a>!
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
