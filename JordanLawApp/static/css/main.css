@@ -218,37 +218,6 @@ body {
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 51, ../sass/_home.scss */
-.contentbody {
-  margin-top: 0;
-  background-color: rgba(200, 200, 200, 0.7);
-  width: 90%;
-  margin: auto;
-  height: auto;
-}
-
-/* line 59, ../sass/_home.scss */
-.contentbody p {
-  line-height: 30px;
-  font-size: 16px;
-  color: #fff;
-  margin: auto;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  width: 75%;
-  background-color: rgba(0, 53, 95, 0.5);
-}
-
-/* line 71, ../sass/_home.scss */
-.header {
-  text-align: center;
-  color: white;
-  font-size: 60px;
-  line-height: 0.78;
-  font-weight: 400;
-}
-
 /* line 79, ../sass/_home.scss */
 #slidein {
   width: 100%;
@@ -622,7 +591,7 @@ html, body {
 /* line 61, ../sass/_people.scss */
 .main-content {
   height: 100vh !important;
-  background-image: url("https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -776,34 +745,6 @@ a {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-/* line 20, ../sass/main.scss */
-.navbar {
-  border: 0px;
-  min-height: 0;
-  -o-transition: 0.25s;
-  -ms-transition: 0.25s;
-  -moz-transition: 0.25s;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
-/* line 26, ../sass/main.scss */
-.navbar.scrolldown {
-  background-color: black;
-}
-
-/* line 30, ../sass/main.scss */
-.navbar-brand {
-  padding: 0;
-}
-
-/* line 34, ../sass/main.scss */
-.navbar-brand img {
-  border-radius: 0 0 15px 0;
-  max-width: 400px;
-  width: 95%;
 }
 
 @media screen and (max-width: 768px) {

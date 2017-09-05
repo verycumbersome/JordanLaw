@@ -65,7 +65,7 @@ html, body {
         color: white
     }
 
-    @include backgroundImage('https://i.ytimg.com/vi/C5wBkVrZAbo/maxresdefault.jpg');
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 
     background-attachment: fixed;
 }
