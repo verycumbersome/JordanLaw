@@ -1,38 +1,15 @@
 @import "mixins";
 
-html {
-    font-family: 'oregonregular';
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
-body {
-    margin: 0;
-}
-
 #index {
     @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 }
 
-#rowleft {
-    height: 300px;
-    width: 400px;
-    display: block;
-    float: left;
-}
-
-#rowright {
-    float: left;
-    width: 50%;
-    margin: auto;
-}
-
 #content {
-    top: 20vh;
-    margin: auto;
-    overflow: hidden;
-    width: 100%;
-    color: white;
+    // top: 20vh;
+    // margin: auto;
+    // // overflow: hidden;
+    // width: 100%;
+    // color: white;
     height: 100vh;
 }
 
@@ -45,34 +22,6 @@ body {
     bottom: 0;
     /*background-color: rgba(50, 50, 50, 0.7);*/
 }
-
-// .contentbody {
-//     margin-top: 0;
-//     background-color: rgba(200, 200, 200, 0.7);
-//     width: 90%;
-//     margin: auto;
-//     height: auto;
-// }
-//
-// .contentbody p {
-//     line-height: 30px;
-//     font-size: 16px;
-//     color: #fff;
-//     margin: auto;
-//     text-align: center;
-//     padding: 20px;
-//     position: relative;
-//     width: 75%;
-//     background-color: rgba(0,53,95, 0.5);
-// }
-//
-// .header{
-//     text-align: center;
-//     color: white;
-//     font-size: 60px;
-//     line-height: 0.78;
-//     font-weight: 400;
-// }
 
 #slidein {
     width: 100%;
@@ -145,43 +94,6 @@ body {
     width: 100%;
     z-index: 1;
     transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-}
-
-#autoscroll {
-    /*padding-top: 400px;*/
-    width: 100%;
-    /*margin:auto;*/
-    text-align: center;
-    bottom: 10px;
-    position: absolute;
-}
-
-#autoscroll a {
-    /*font-size: 4em;*/
-    bottom: 0;
-    color: white;
-    text-decoration: none;
-}
-
-#scrollbox {
-    top: 0;
-}
-
-#scrollbox .glyphicon {
-    font-size: 25px;
-}
-
-#scrolldown {
-    /*position: absolute;*/
-    font-size: 4em;
-    position: absolute;
-    margin-left: -23px;
-    margin-bottom: -14px;
-}
-
-#scrolldownarrow {
-    z-index: -1;
-    display: block;
 }
 
 #statement {

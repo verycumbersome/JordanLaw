@@ -4,22 +4,24 @@
 
 {% block content %}
 <div class='section main-content'>
-    <div class='container animated fadeInRight row'>
+    <div class='container-fluid person-card animated slideInUp row'>
         <div class='flip-container'>
             <img class='profile-pic' src='{% static 'images/susan.jpg' %}'></img>
         </div>
         <div class='text-container'>
             <div class='link name'><h2>Susan Jordan</h2></div>
-            <div class='link resume'><h4>Child defense attorney</h4></div>
-            <div class='link email'><h5><a href='mailto:matthewsages@gmail.com'>susanjordan.attorney@gmail.com<a></h5></div>
+            <div class='link resume'><h4>Attorney at Law</h4></div>
+            <div class='link email'><h5><a href='mailto:susanjordan.attorney@gmail.com'>Email<a></h5></div>
             <div class='link twitter'><h5><a href='https://twitter.com/jordanma1998'>541-554-7684</a></h5></div>
         </div>
     </div>
-    <div id="autoscroll" class="animated slideInUp noselect noselect-recursive">
-        <div id=scrollbox>
-            <a id="scrolldown" class="fa fa-square-o" href="#footer"></a>
-            <a id="scrolldownarrow" class="glyphicon glyphicon-chevron-down"></a>
-        </div>
+    <div class="animated fadeInRight autoscroll">
+            <div class=scrollbox>
+                <a class="fa fa-square-o scrolldown" href="#about-me"></a>
+                <div class='scrolldownarrow'>
+                    <a class="fa fa-chevron-down"></a>
+                </div>
+            </div>
     </div>
 
 </div>
@@ -137,7 +139,7 @@
     </div>
 </div>
 <div id='resume' class='section'>
-    <div class="card" style="width: 40rem;">
+    <div class="card" style="width: 80vw;">
         <div class="card-block">
             <h4 class="card-title">Resume</h4>
             <h6 class="card-subtitle mb-2">Web Developer</h6>
@@ -164,8 +166,8 @@
                 </ul>
         </div>
         <div class="card-block">
-            <a href="https://github.com/verycumbersome" class="btn btn-warning fa fa-github"> Github</a>
-            <a href="mailto:matthewsages@gmail.com" class="btn btn-warning fa fa-envelope-o"> Contact</a>
+            <a href="https://github.com/verycumbersome" class="btn btn-primary fa fa-phone"> Phone</a>
+            <a href="mailto:matthewsages@gmail.com" class="btn btn-default fa fa-envelope-o"> Contact</a>
         </div>
     </div>
 </div>

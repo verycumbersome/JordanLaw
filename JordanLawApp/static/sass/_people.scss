@@ -60,6 +60,7 @@ html, body {
 
 .main-content {
     height: 100vh !important;
+    color: white;
 
     .link:hover a {
         color: white
@@ -115,6 +116,12 @@ html, body {
     @include box_shadow(4);
     -webkit-transform: translate3d(0, -5%, 0);
     transform: translate3d(0, -5%, 0);
+}
+
+@media (max-width: 640px) {
+    .profile-pic {
+        display: none;
+    }
 }
 
 .flip-container {
