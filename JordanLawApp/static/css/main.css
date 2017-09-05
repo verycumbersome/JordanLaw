@@ -168,14 +168,15 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-attachment: fixed;
 }
 
-/* line 7, ../sass/_home.scss */
+/* line 9, ../sass/_home.scss */
 #content {
-  height: 100vh;
+  height: 100vh !important;
 }
 
-/* line 16, ../sass/_home.scss */
+/* line 13, ../sass/_home.scss */
 #content h2 {
   text-align: center;
   font-size: 40px;
@@ -186,7 +187,7 @@
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 26, ../sass/_home.scss */
+/* line 23, ../sass/_home.scss */
 #slidein {
   width: 100%;
   padding-bottom: 30px;
@@ -196,7 +197,7 @@
   /*border: 3px solid green;*/
 }
 
-/* line 35, ../sass/_home.scss */
+/* line 32, ../sass/_home.scss */
 #slidein h1 {
   color: white;
   font-size: 70px;
@@ -204,7 +205,7 @@
   font-weight: 400;
 }
 
-/* line 42, ../sass/_home.scss */
+/* line 39, ../sass/_home.scss */
 #title {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -217,7 +218,7 @@
   /*border: 3px solid red;*/
 }
 
-/* line 54, ../sass/_home.scss */
+/* line 51, ../sass/_home.scss */
 #subtitle {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -231,7 +232,7 @@
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 68, ../sass/_home.scss */
+  /* line 65, ../sass/_home.scss */
   #title {
     border-bottom: 0px;
     text-align: center;
@@ -241,7 +242,7 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 80, ../sass/_home.scss */
+  /* line 77, ../sass/_home.scss */
   #subtitle {
     border-bottom: 0px;
     text-align: center;
@@ -249,7 +250,7 @@
     margin: auto;
   }
 }
-/* line 89, ../sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 #header {
   top: 0;
   color: white;
@@ -260,13 +261,13 @@
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 99, ../sass/_home.scss */
+/* line 96, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
   overflow: hidden;
 }
 
-/* line 104, ../sass/_home.scss */
+/* line 101, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.3em;
@@ -515,6 +516,7 @@ html, body {
 
 /* line 61, ../sass/_people.scss */
 .main-content {
+  padding-top: 0px !important;
   height: 100vh !important;
   color: white;
   background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
@@ -523,28 +525,28 @@ html, body {
   background-position: center center;
   background-attachment: fixed;
 }
-/* line 65, ../sass/_people.scss */
+/* line 66, ../sass/_people.scss */
 .main-content .link:hover a {
   color: white;
 }
 
-/* line 74, ../sass/_people.scss */
+/* line 75, ../sass/_people.scss */
 .container {
   display: flex;
   flex-direction: column;
 }
 
-/* line 79, ../sass/_people.scss */
+/* line 80, ../sass/_people.scss */
 .text-container {
   color: #ffffff;
 }
 
-/* line 83, ../sass/_people.scss */
+/* line 84, ../sass/_people.scss */
 .row {
   flex-direction: row;
 }
 
-/* line 87, ../sass/_people.scss */
+/* line 88, ../sass/_people.scss */
 .section {
   width: 100%;
   z-index: 1;
@@ -556,18 +558,19 @@ html, body {
   justify-content: center;
 }
 
-/* line 98, ../sass/_people.scss */
+/* line 99, ../sass/_people.scss */
 .section:first-child {
   height: 90vh;
+  border: 3px solid green;
 }
 
-/* line 102, ../sass/_people.scss */
+/* line 104, ../sass/_people.scss */
 .section:not(:first-child) {
   padding-top: 125px;
   background-color: #f3f3f3;
 }
 
-/* line 107, ../sass/_people.scss */
+/* line 109, ../sass/_people.scss */
 .profile-pic {
   transition: .5s;
   margin-left: 10px;
@@ -576,7 +579,7 @@ html, body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 115, ../sass/_people.scss */
+/* line 117, ../sass/_people.scss */
 .profile-pic:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   -webkit-transform: translate3d(0, -5%, 0);
@@ -584,12 +587,12 @@ html, body {
 }
 
 @media (max-width: 640px) {
-  /* line 122, ../sass/_people.scss */
+  /* line 124, ../sass/_people.scss */
   .profile-pic {
     display: none;
   }
 }
-/* line 127, ../sass/_people.scss */
+/* line 129, ../sass/_people.scss */
 .flip-container {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
@@ -598,26 +601,26 @@ html, body {
   margin-right: 15px;
 }
 
-/* line 135, ../sass/_people.scss */
+/* line 137, ../sass/_people.scss */
 .profile-pic, .front, .back {
   width: 144px;
   height: 144px;
   border-radius: 50% !important;
 }
 
-/* line 141, ../sass/_people.scss */
+/* line 143, ../sass/_people.scss */
 .card-link:hover {
   color: black;
 }
 
-/* line 145, ../sass/_people.scss */
+/* line 147, ../sass/_people.scss */
 .paragraph-text {
   width: 60%;
   min-width: 200px;
   margin-bottom: 20px;
 }
 
-/* line 151, ../sass/_people.scss */
+/* line 153, ../sass/_people.scss */
 .card {
   border: 0px;
   -o-transition: 0.5s;
@@ -628,31 +631,31 @@ html, body {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-/* line 157, ../sass/_people.scss */
+/* line 159, ../sass/_people.scss */
 .card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   -webkit-transform: translate3d(0, -0.5%, 0);
   transform: translate3d(0, -0.5%, 0);
 }
 
-/* line 165, ../sass/_people.scss */
+/* line 167, ../sass/_people.scss */
 #works a {
   color: black;
 }
-/* line 169, ../sass/_people.scss */
+/* line 171, ../sass/_people.scss */
 #works a:hover {
   color: orange;
 }
 
-/* line 174, ../sass/_people.scss */
+/* line 176, ../sass/_people.scss */
 #toolbox {
   background-attachment: fixed;
-  background-image: url("https://newevolutiondesigns.com/images/freebies/google-material-design-wallpaper-20.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 175, ../sass/_people.scss */
+/* line 177, ../sass/_people.scss */
 #toolbox h1 {
   color: white;
 }
@@ -764,7 +767,6 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #99979c;
-  text-align: center;
   background-color: #2a2730;
 }
 /* line 92, ../sass/main.scss */

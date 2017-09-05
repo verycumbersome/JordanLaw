@@ -59,6 +59,7 @@ html, body {
 }
 
 .main-content {
+    padding-top: 0px !important;
     height: 100vh !important;
     color: white;
 
@@ -97,6 +98,7 @@ html, body {
 
 .section:first-child {
     height: 90vh;
+    border: 3px solid green;
 }
 
 .section:not(:first-child) {
@@ -177,5 +179,5 @@ html, body {
     }
 
     background-attachment: fixed;
-    @include backgroundImage('https://newevolutiondesigns.com/images/freebies/google-material-design-wallpaper-20.jpg');
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 }

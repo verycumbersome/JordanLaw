@@ -7,7 +7,7 @@ $(document).ready(function() {
         $(".scrolldownarrow").stop().effect("bounce", { times:3, distance:20, easing:"easeInCubic" }, 'normal');
     }, 1500);
 
-    $(".scrolldown").click(function(e) {
+    $(".scrollbox").click(function(e) {
 
         page.on("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove", function(){
            page.stop();

@@ -2,15 +2,12 @@
 
 #index {
     @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
+    background-attachment: fixed;
+
 }
 
 #content {
-    // top: 20vh;
-    // margin: auto;
-    // // overflow: hidden;
-    // width: 100%;
-    // color: white;
-    height: 100vh;
+    height: 100vh !important;
 }
 
 #content h2 {
