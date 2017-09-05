@@ -207,7 +207,7 @@ body {
   height: 100vh;
 }
 
-/* line 41, ../sass/_home.scss */
+/* line 39, ../sass/_home.scss */
 #content h2 {
   text-align: center;
   font-size: 40px;
@@ -218,7 +218,7 @@ body {
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 77, ../sass/_home.scss */
 #slidein {
   width: 100%;
   padding-bottom: 30px;
@@ -228,7 +228,7 @@ body {
   /*border: 3px solid green;*/
 }
 
-/* line 88, ../sass/_home.scss */
+/* line 86, ../sass/_home.scss */
 #slidein h1 {
   color: white;
   font-size: 70px;
@@ -236,7 +236,7 @@ body {
   font-weight: 400;
 }
 
-/* line 95, ../sass/_home.scss */
+/* line 93, ../sass/_home.scss */
 #title {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -249,7 +249,7 @@ body {
   /*border: 3px solid red;*/
 }
 
-/* line 107, ../sass/_home.scss */
+/* line 105, ../sass/_home.scss */
 #subtitle {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -263,7 +263,7 @@ body {
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 121, ../sass/_home.scss */
+  /* line 119, ../sass/_home.scss */
   #title {
     border-bottom: 0px;
     text-align: center;
@@ -273,7 +273,7 @@ body {
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 133, ../sass/_home.scss */
+  /* line 131, ../sass/_home.scss */
   #subtitle {
     border-bottom: 0px;
     text-align: center;
@@ -281,7 +281,7 @@ body {
     margin: auto;
   }
 }
-/* line 142, ../sass/_home.scss */
+/* line 140, ../sass/_home.scss */
 #header {
   top: 0;
   color: white;
@@ -292,7 +292,7 @@ body {
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 152, ../sass/_home.scss */
+/* line 150, ../sass/_home.scss */
 #autoscroll {
   /*padding-top: 400px;*/
   width: 100%;
@@ -302,7 +302,7 @@ body {
   position: absolute;
 }
 
-/* line 161, ../sass/_home.scss */
+/* line 159, ../sass/_home.scss */
 #autoscroll a {
   /*font-size: 4em;*/
   bottom: 0;
@@ -310,17 +310,17 @@ body {
   text-decoration: none;
 }
 
-/* line 168, ../sass/_home.scss */
+/* line 166, ../sass/_home.scss */
 #scrollbox {
   top: 0;
 }
 
-/* line 172, ../sass/_home.scss */
+/* line 170, ../sass/_home.scss */
 #scrollbox .glyphicon {
   font-size: 25px;
 }
 
-/* line 176, ../sass/_home.scss */
+/* line 174, ../sass/_home.scss */
 #scrolldown {
   /*position: absolute;*/
   font-size: 4em;
@@ -329,19 +329,19 @@ body {
   margin-bottom: -14px;
 }
 
-/* line 184, ../sass/_home.scss */
+/* line 182, ../sass/_home.scss */
 #scrolldownarrow {
   z-index: -1;
   display: block;
 }
 
-/* line 189, ../sass/_home.scss */
+/* line 187, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
   overflow: hidden;
 }
 
-/* line 194, ../sass/_home.scss */
+/* line 192, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.3em;
@@ -745,6 +745,34 @@ a {
   -moz-transition: 0.5s;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+/* line 20, ../sass/main.scss */
+.navbar {
+  border: 0px;
+  min-height: 0;
+  -o-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+/* line 26, ../sass/main.scss */
+.navbar.scrolldown {
+  background-color: black;
+}
+
+/* line 30, ../sass/main.scss */
+.navbar-brand {
+  padding: 0;
+}
+
+/* line 34, ../sass/main.scss */
+.navbar-brand img {
+  border-radius: 0 0 15px 0;
+  max-width: 400px;
+  width: 95%;
 }
 
 @media screen and (max-width: 768px) {

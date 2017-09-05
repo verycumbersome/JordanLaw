@@ -11,6 +11,9 @@ def index(request):
 def susanjordan(request):
     return render(request, "people/susanjordan.html", {})
 
+# def susanjordan(request):
+#     return render(request, "people/cindyvance.html", {})
+
 def blog(request):
 
     posts = BlogPost.objects.order_by('created_date').reverse()

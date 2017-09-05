@@ -9,53 +9,41 @@
 
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css' integrity='sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd' crossorigin='anonymous'>    <link href='{% static 'css/main.css' %}' rel='stylesheet' type='text/css' media='screen' />
-    <!-- <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" media="screen" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet" type="text/css" media="screen" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.2/umd/popper.min.js"></script>
-    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js' integrity='sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'javascript/main.js' %}"></script>
 </head>
 
 <body>
-<nav class="navbar navbar-inverse bg-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<nav class="navbar sticky-top navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
       </button>
-            <a class="navbar-brand" href="{% url 'JordanLawApp:home' %}"><img src="/static/images/jordanlaw.png"></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="{% url 'JordanLawApp:home' %}">Home</a></li>
-                <li class="dropdown people">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
-                    <ul class="dropdown-menu people">
-                        <li><a href="/pages/people/susanjordan.html">Susan Jordan</a></li>
-                        <li><a href="#">Cindy Vance</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown practices">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Practices<span class="caret"></span></a>
-                    <ul class="dropdown-menu practices">
-                        <li><a href="#">Estate</a></li>
-                        <li><a href="#">Juvenile</a></li>
-                        <li><a href="#">Criminal</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="mailto:susanjordan.attorney@gmail.com"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
-                <li><a href="{% url 'JordanLawApp:blog' %}"><span class="glyphicon glyphicon-pencil"></span> Blog</a></li>
-            </ul>
-        </div>
+    <a class="navbar-brand" href="{% url 'JordanLawApp:home' %}"><img src="/static/images/jordanlaw.png"></a>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              People
+            </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="{% url 'JordanLawApp:susanjordan' %}">Susan Jordan</a>
+                    <a class="dropdown-item" href="{% url 'JordanLawApp:home' %}">Cindy Vance</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Practices</a>
+            </li>
+        </ul>
     </div>
 </nav>
 <!-- End Header -->

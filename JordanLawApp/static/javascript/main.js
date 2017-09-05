@@ -10,19 +10,6 @@ $(document).ready(function() {
 
     $("#content h2").fadeOut(0);
 
-    // $("#missionstatement").fadeOut(0);
-
-    // $(".navbar").find(".active").removeClass("active");
-
-    $("#aboutusdropdown").slideUp(0);
-    $("#practicesdropdown").slideUp(0);
-    $("#blogdropdown").slideUp(0);
-    $("#contactdropdown").slideUp(0);
-
-    // $(".navbar a").on("click", function(){
-    //     $(".navbar").find(".active").removeClass("active");
-    // });
-
     if (yOffset > $("#autoscroll").position().top){
         alert("fuck");
     }

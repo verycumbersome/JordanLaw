@@ -17,25 +17,25 @@ a {
     @include transitions(0.5s);
 }
 
-// .navbar {
-//     border: 0px;
-//     min-height: 0;
-//     @include transitions(0.25s);
-// }
-//
-// .navbar.scrolldown {
-//     background-color: black;
-// }
-//
-// .navbar-brand {
-//     padding: 0;
-// }
-//
-// .navbar-brand img{
-//     border-radius: 0 0 15px 0;
-//     max-width: 400px;
-//     width: 95%;
-// }
+.navbar {
+    border: 0px;
+    min-height: 0;
+    @include transitions(0.25s);
+}
+
+.navbar.scrolldown {
+    background-color: black;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand img{
+    border-radius: 0 0 15px 0;
+    max-width: 400px;
+    width: 95%;
+}
 
 @media screen and (max-width: 768px) {
  .navbar {
