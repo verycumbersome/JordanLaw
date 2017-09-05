@@ -1,7 +1,4 @@
 @import 'http://fonts.googleapis.com/css?family=Roboto:300,400,500,700';
-body, body * {
-    transform: translate3d(0, 0, 0);
-}
 
 h1 {
     font-family: "Roboto", sans-serif;
@@ -98,11 +95,11 @@ html, body {
 
 .section:first-child {
     height: 90vh;
-    border: 3px solid green;
 }
 
 .section:not(:first-child) {
     padding-top: 125px;
+    padding-bottom: 40px;
     background-color: #f3f3f3;
 }
 
@@ -152,6 +149,7 @@ html, body {
 
 .card {
     border: 0px;
+    padding: 20px;
     @include transitions(0.5s);
     @include box_shadow(1);
 }
@@ -169,11 +167,14 @@ html, body {
     }
 
     a:hover {
-        color: orange;
+        color: (lighten(rgb(0,53,95), 20%));
     }
 }
 
 #toolbox {
+    .row {
+        padding-bottom: 30px;
+    }
     h1 {
         color: white;
     }

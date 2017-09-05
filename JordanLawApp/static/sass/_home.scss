@@ -4,6 +4,20 @@
     @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
     background-attachment: fixed;
 
+    color: white;
+
+    &:before {
+        content: '';
+    	position: absolute;
+        // vertical-align: bottom;
+    	// top: 0;
+    	right: 0;
+    	bottom: 0;
+    	left: 0;
+    	background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000);
+    	opacity: .6;
+  }
+
 }
 
 #content {
@@ -20,20 +34,34 @@
     /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-#slidein {
-    width: 100%;
-    padding-bottom: 30px;
-    padding-top: 25vh;
+.message {
     line-height: 0.69;
     top: 0vh;
-    /*border: 3px solid green;*/
 }
 
-#slidein h1{
+.message h1{
     color: white;
     font-size: 70px;
     line-height: 0.75;
     font-weight: 400;
+}
+
+#left-message {
+    margin-left: 30vw;
+}
+
+#right-message {
+    margin-left: 40vw;
+}
+
+@media (max-width: 640px) {
+    #left-message {
+        margin-left: 0;
+    }
+
+    #right-message {
+        margin-left: 0;
+    }
 }
 
 #title {
@@ -100,7 +128,7 @@
 
 #missionstatement {
     line-height: 30px;
-    font-size: 1.3em;
+    font-size: 1.2em;
     color: #fff;
     margin: auto;
     text-align: center;

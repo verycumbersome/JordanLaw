@@ -3,10 +3,12 @@
 @import "people";
 
 html, body {
+    font-family: 'Roboto', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 a {
@@ -108,5 +110,5 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #99979c;
-    background-color: #2a2730;
+    background-color: #000;
 }
