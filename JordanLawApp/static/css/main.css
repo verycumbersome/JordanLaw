@@ -6,7 +6,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 45, ../sass/_mixins.scss */
+/* line 47, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -16,7 +16,7 @@
   user-select: none;
 }
 
-/* line 54, ../sass/_mixins.scss */
+/* line 56, ../sass/_mixins.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -118,31 +118,31 @@
     transform: none;
   }
 }
-/* line 136, ../sass/_mixins.scss */
+/* line 138, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 140, ../sass/_mixins.scss */
+/* line 142, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 144, ../sass/_mixins.scss */
+/* line 146, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 149, ../sass/_mixins.scss */
+/* line 151, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 153, ../sass/_mixins.scss */
+/* line 155, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -150,19 +150,19 @@
   animation-fill-mode: both;
 }
 
-/* line 159, ../sass/_mixins.scss */
+/* line 161, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 163, ../sass/_mixins.scss */
+/* line 165, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
 
-/* line 3, ../sass/_home.scss */
+/* line 5, ../sass/_home.scss */
 #index {
   background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
@@ -171,7 +171,7 @@
   background-attachment: fixed;
   color: white;
 }
-/* line 9, ../sass/_home.scss */
+/* line 11, ../sass/_home.scss */
 #index:before {
   content: '';
   position: absolute;
@@ -182,12 +182,12 @@
   opacity: .6;
 }
 
-/* line 23, ../sass/_home.scss */
+/* line 25, ../sass/_home.scss */
 #content {
   height: 100vh !important;
 }
 
-/* line 27, ../sass/_home.scss */
+/* line 29, ../sass/_home.scss */
 #content h2 {
   text-align: center;
   font-size: 40px;
@@ -198,42 +198,42 @@
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 37, ../sass/_home.scss */
+/* line 39, ../sass/_home.scss */
 .message {
   line-height: 0.69;
   top: 0vh;
 }
-
-/* line 42, ../sass/_home.scss */
+/* line 43, ../sass/_home.scss */
 .message h1 {
   color: white;
-  font-size: 70px;
+  font-size: 4.5em;
   line-height: 0.75;
   font-weight: 400;
 }
-
-/* line 49, ../sass/_home.scss */
-#left-message {
+/* line 50, ../sass/_home.scss */
+.message #left-message {
   margin-left: 30vw;
 }
-
-/* line 53, ../sass/_home.scss */
-#right-message {
+/* line 55, ../sass/_home.scss */
+.message #right-message {
   margin-left: 40vw;
 }
 
 @media (max-width: 640px) {
-  /* line 58, ../sass/_home.scss */
-  #left-message {
-    margin-left: 0;
+  /* line 63, ../sass/_home.scss */
+  .message h1 {
+    font-size: 2.8em;
   }
-
-  /* line 62, ../sass/_home.scss */
-  #right-message {
-    margin-left: 0;
+  /* line 67, ../sass/_home.scss */
+  .message #left-message {
+    margin-left: 0vw;
+  }
+  /* line 72, ../sass/_home.scss */
+  .message #right-message {
+    margin-left: 0vw;
   }
 }
-/* line 67, ../sass/_home.scss */
+/* line 79, ../sass/_home.scss */
 #title {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -246,7 +246,7 @@
   /*border: 3px solid red;*/
 }
 
-/* line 79, ../sass/_home.scss */
+/* line 91, ../sass/_home.scss */
 #subtitle {
   width: 100%;
   border-bottom: 2px solid #fff;
@@ -260,7 +260,7 @@
 }
 
 @media only screen and (max-width: 640px) {
-  /* line 93, ../sass/_home.scss */
+  /* line 105, ../sass/_home.scss */
   #title {
     border-bottom: 0px;
     text-align: center;
@@ -270,7 +270,7 @@
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 105, ../sass/_home.scss */
+  /* line 117, ../sass/_home.scss */
   #subtitle {
     border-bottom: 0px;
     text-align: center;
@@ -278,7 +278,7 @@
     margin: auto;
   }
 }
-/* line 114, ../sass/_home.scss */
+/* line 126, ../sass/_home.scss */
 #header {
   top: 0;
   color: white;
@@ -289,13 +289,13 @@
   transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
 
-/* line 124, ../sass/_home.scss */
+/* line 136, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
   overflow: hidden;
 }
 
-/* line 129, ../sass/_home.scss */
+/* line 141, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.2em;
@@ -321,7 +321,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 45, ../sass/_mixins.scss */
+/* line 47, ../sass/_mixins.scss */
 .noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -331,7 +331,7 @@
   user-select: none;
 }
 
-/* line 54, ../sass/_mixins.scss */
+/* line 56, ../sass/_mixins.scss */
 .noselect-recursive *, .noselect-recursive * *, .noselect-recursive {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -433,31 +433,31 @@
     transform: none;
   }
 }
-/* line 136, ../sass/_mixins.scss */
+/* line 138, ../sass/_mixins.scss */
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
 }
 
-/* line 140, ../sass/_mixins.scss */
+/* line 142, ../sass/_mixins.scss */
 .slideInUp {
   -webkit-animation-name: slideInUp;
   animation-name: slideInUp;
 }
 
-/* line 144, ../sass/_mixins.scss */
+/* line 146, ../sass/_mixins.scss */
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
 
-/* line 149, ../sass/_mixins.scss */
+/* line 151, ../sass/_mixins.scss */
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
 
-/* line 153, ../sass/_mixins.scss */
+/* line 155, ../sass/_mixins.scss */
 .animated {
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
@@ -465,13 +465,13 @@
   animation-fill-mode: both;
 }
 
-/* line 159, ../sass/_mixins.scss */
+/* line 161, ../sass/_mixins.scss */
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
 
-/* line 163, ../sass/_mixins.scss */
+/* line 165, ../sass/_mixins.scss */
 .animated.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
