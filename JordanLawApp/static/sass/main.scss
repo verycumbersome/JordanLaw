@@ -18,12 +18,13 @@ a {
 
 .navbar {
     border: 0px;
+    background-color: black !important;
     min-height: 0;
     @include transitions(0.25s);
 }
 
 .navbar.scrolldown {
-    background-color: black;
+    background-color: rgba(0,53,95, 1) !important;
 }
 
 .navbar-brand {
@@ -95,6 +96,10 @@ footer {
         color: white !important;
     }
 
+    div {
+        text-align: center !important;
+    }
+
     .bs-docs-footer-links {
         padding-left: 0;
         margin-bottom: 20px;
@@ -106,9 +111,9 @@ footer {
         margin-left: 15px;
     }
 
-
+    text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    color: #99979c;
-    background-color: #000;
+    color: white;
+    background-color: rgba(0,53,95, 1);
 }

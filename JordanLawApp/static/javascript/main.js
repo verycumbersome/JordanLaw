@@ -28,12 +28,12 @@ $(window).scroll(function(event){
     var breakpoint = windowHeight/3;
 
     if (yOffset > breakpoint){
-        // $(".navbar").addClass('scrolldown');
+        $(".navbar").addClass('scrolldown');
         $("#missionstatement").addClass('slideInUp');
         $("#missionstatement").addClass('scrolldown');
     }
     else{
-        // $(".navbar").removeClass('scrolldown');
+        $(".navbar").removeClass('scrolldown');
         // $("#missionstatement").removeClass('scrolldown');
 
     }

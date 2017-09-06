@@ -4,20 +4,22 @@ $underline: '\00a0';
 
 #index {
     @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
     color: white;
+
+    position: relative;
 
     &:before {
         content: '';
     	position: absolute;
-        // vertical-align: bottom;
-    	// top: 0;
+        vertical-align: bottom;
+    	top: 0;
     	right: 0;
     	bottom: 0;
     	left: 0;
     	background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000);
-    	opacity: .6;
+    	opacity: 1;
   }
 
 }
@@ -76,29 +78,6 @@ $underline: '\00a0';
     }
 }
 
-#title {
-    width: 100%;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding: 0;
-    position: relative;
-    margin-left: 550px;
-    margin-top: 0;
-    font-weight: 800;
-    /*border: 3px solid red;*/
-}
-
-#subtitle {
-    width: 100%;
-    border-bottom: 2px solid #fff;
-    display: inline-block;
-    padding: 0;
-    position: relative;
-    margin-left: -220px;
-    text-align: right;
-    font-weight: 800;
-    /*border: 3px solid blue;*/
-}
 
 @media only screen and (max-width: 640px) {
 
@@ -111,27 +90,16 @@ $underline: '\00a0';
 }
 
 }
-
-@media only screen and (max-width: 640px) {
-
-#subtitle {
-  border-bottom: 0px;
-  text-align: center;
-  left: 0;
-  margin: auto;
-}
-
-}
-
-#header {
-    top: 0;
-    color: white;
-    position: fixed;
-    display: inline-block;
-    width: 100%;
-    z-index: 1;
-    transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-}
+//
+// #header {
+//     top: 0;
+//     color: white;
+//     position: fixed;
+//     display: inline-block;
+//     width: 100%;
+//     z-index: 1;
+//     transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+// }
 
 #statement {
     min-height: 50vh;
@@ -151,8 +119,8 @@ $underline: '\00a0';
     position: relative;
     margin-top: 100px;
     margin-bottom: 100px;
-    width: 75%;
-    background-color: lighten( rgba(0,53,95, 1), 10% );
+    width: 85vw;
+    // background-color: lighten( rgba(0,53,95, 1), 10% );
     border-radius: 30px 0 30px 0;
 }
 
