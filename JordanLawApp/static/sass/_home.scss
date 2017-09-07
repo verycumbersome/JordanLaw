@@ -3,7 +3,7 @@
 $underline: '\00a0';
 
 #index {
-    @include backgroundImage("https://www.safetica.com/blog/wp-content/uploads/2013/07/Scales-of-Justice-in-courtroom.jpg");
+    @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
     background-position: bottom;
     color: white;
     position: relative;
@@ -17,7 +17,7 @@ $underline: '\00a0';
     	bottom: 0;
     	left: 0;
     	background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000);
-    	opacity: 1;
+    	opacity: 0.6;
   }
 
 }
@@ -39,6 +39,7 @@ $underline: '\00a0';
 .message {
     line-height: 0.69;
     top: 0vh;
+    // text-align: center !important;
 
     h1 {
         color: white;
@@ -47,6 +48,12 @@ $underline: '\00a0';
         font-weight: 400;
     }
 
+    h2 {
+        color: white;
+        font-size: 2.8em;
+        line-height: 0.75;
+        font-weight: 400;
+    }
     #left-message {
         margin-left: 30vw;
         // border-bottom: 2px solid #fff;
@@ -60,6 +67,7 @@ $underline: '\00a0';
 
 @media (max-width: 640px) {
     .message {
+
         h1 {
             font-size: 2.8em;
         }

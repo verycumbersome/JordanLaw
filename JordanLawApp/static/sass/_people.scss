@@ -79,14 +79,14 @@ html, body {
     // }
 
     .link a {
-        color: rgb(206, 170, 94);
+        color: (lighten(rgb(0,53,95), 30%));
     }
 
     .link:hover a {
         color: white;
     }
 
-    @include backgroundImage("https://www.legalstudies.com/wp-content/uploads/Paralegal-experience-law-school.jpg");
+    @include backgroundImage("https://www.ademero.com/wp-content/uploads/2017/02/paperless-law-office-software-solutions.jpg");
 
     background-attachment: fixed;
 }
