@@ -3,11 +3,9 @@
 $underline: '\00a0';
 
 #index {
-    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
-    // background-attachment: fixed;
-
+    @include backgroundImage("https://www.safetica.com/blog/wp-content/uploads/2013/07/Scales-of-Justice-in-courtroom.jpg");
+    background-position: bottom;
     color: white;
-
     position: relative;
 
     &:before {

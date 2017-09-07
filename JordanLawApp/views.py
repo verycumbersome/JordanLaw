@@ -2,17 +2,20 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-from .models import Person, BlogPost
+from .models import BlogPost
+
 
 def index(request):
-    people = Person.objects.all()
-    return render(request, "index.html", {'people':people})
+    return render(request, "index.html")
+
 
 def susanjordan(request):
     return render(request, "people/susanjordan.html", {})
 
-# def susanjordan(request):
-#     return render(request, "people/cindyvance.html", {})
+
+def cindyvance(request):
+    return render(request, 'people/cindyvance.html', {})
+
 
 def blog(request):
 
