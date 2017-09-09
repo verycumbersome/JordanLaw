@@ -78,15 +78,7 @@ html, body {
     //     @include blurs(6px);
     // }
 
-    .link a {
-        color: (lighten(rgb(0,53,95), 30%));
-    }
-
-    .link:hover a {
-        color: white;
-    }
-
-    @include backgroundImage("https://www.ademero.com/wp-content/uploads/2017/02/paperless-law-office-software-solutions.jpg");
+    @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
 
     background-attachment: fixed;
 }
