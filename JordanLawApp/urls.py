@@ -7,5 +7,5 @@ urlpatterns = [
     url(r'^$', views.index, name='home'),
     url(r'^blog/', views.blog, name='blog'),
     url(r'^people/susanjordan/', views.susanjordan, name='susanjordan'),
-    # url(r'^people/cindyvance/', views.cindyvance, name='cindyvance'),
+    url(r'^people/cindyvance/', views.cindyvance, name='cindyvance'),
 ]

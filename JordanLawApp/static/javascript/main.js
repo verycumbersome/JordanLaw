@@ -13,7 +13,7 @@ $(document).ready(function() {
            page.stop();
         });
 
-        page.stop().animate({scrollTop: $("footer").position().top}, 1500, function(){
+        page.stop().animate({scrollTop: $("#about-me").position().top}, 1500, function(){
            page.off("scroll mousedown wheel DOMMouseScroll mousewheel keyup touchmove");
         });
 

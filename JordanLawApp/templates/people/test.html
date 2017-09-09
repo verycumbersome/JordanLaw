@@ -1,0 +1,76 @@
+{% extends 'people/persontemplate.html' %}
+
+{% load static %}
+
+{% block person-image %}
+    <img class='profile-pic' src='{% static 'images/susan.jpg' %}'></img>
+{% endblock %}
+
+{% block person-card %}
+    <div class='link name'><h2>Susan Jordan</h2></div>
+    <div class='link resume'><h4>Attorney at Law</h4></div>
+    <div class='link email'><h5><a class='btn btn-primary fa fa-envelope-o' href='mailto:susanjordan.attorney@gmail.com'> susanjordan.attorney@gmail.com<a></h5></div>
+    <div class='link twitter'><h5><a class='btn btn-primary fa fa-phone' href='https://twitter.com/jordanma1998'> 541-554-7684</a></h5></div>
+{% endblock %}
+
+{% block person-about %}
+    <h1>About Susan</h1>
+    <p class='paragraph-text'>
+        Susan has been engaged in private practice in Lane County for seventeen years.  After
+    graduating from the University of Oregon School of Law in 1997, Susan was admitted to the Oregon
+    State Bar and clerked for three Lane County Circuit Court judges until 2000, when she joined a
+    Springfield firm and practiced in the area of civil litigation, with a focus on real property
+    disputes. Susan was admitted to practice in Federal Court and worked briefly for the University of
+    Oregon School of Law before opening her own practice in 2005, originally Susan Ezzy Jordan, LLC, now
+    Jordan Law, P.C.
+    </p>
+
+    <p class='paragraph-text'>
+        Susan’s background includes general civil litigation and exposure to a wide range of
+    practice areas including Civil Litigation, Estate Planning, Family Law and matters involving Real
+    Property.  In 2007, she began practicing Juvenile Law and became an active member of the Lane County
+    Juvenile Law Consortium.  Juvenile Law constitutes a significant portion of her practice and Susan
+    also continues to assist clients with other issues related to her general practice areas.
+    </p>
+
+    <p class='paragraph-text'>
+        Susan’s background includes general practice and civil litigation as well as Juvenile
+    law and criminal defense.  She joined the Lane County Juvenile Law Consortium In 2007 and Juvenile
+    Law comprises a significant practice area in combination with her general practice areas which
+    include real property issues, probate, estate planning, and civil litigation.  Susan also handles
+    adoptions.  Susan has been married for nineteen years and has two children.
+    </p>
+{% endblock %}
+
+{% block person-works %}
+    <h4><a href='#'>Lane County Juvenile Law Consortium Member</a></h4>
+    <p class='paragraph-text'>
+        Susan has been a member of the Lane County Juvenile Law Consortium since 2007.  She
+        has served as a defense attorney for Springfield Municipal Court and has also worked as a contract
+        attorney prosecuting cases on behalf of the City of Eugene.
+    </p>
+
+    <h4><a href='#'>OSBLPRC Member</a></h4>
+    <p class='paragraph-text'>
+        Susan has served on the Oregon State Bar Local Professional Responsibility Committee, is a
+        long-term member of the Lane County Bar Association and also engages in regular pro bono activities
+        on behalf of low-income clients and in connection with the University of Oregon School of Law.
+    </p>
+
+    <h4><a href='#'>Felony crime resolution</a></h4>
+    <p class='paragraph-text'>
+        She won both her first felony criminal trial and her first trial defending a parent in a
+        Termination of Parental Rights trial and has appeared in numerous bench and jury trials in criminal,
+        civil, and juvenile proceedings.  Susan continues to grow and expand her practice base with ongoing
+        legal education in her practice areas and membership in the Juvenile and Probate sections of the
+        Oregon State Bar.
+    </p>
+    <h4><a href='#'>Felony crime resolution</a></h4>
+    <p class='paragraph-text'>
+        She won both her first felony criminal trial and her first trial defending a parent in a
+        Termination of Parental Rights trial and has appeared in numerous bench and jury trials in criminal,
+        civil, and juvenile proceedings.  Susan continues to grow and expand her practice base with ongoing
+        legal education in her practice areas and membership in the Juvenile and Probate sections of the
+        Oregon State Bar.
+    </p>
+{% endblock %}

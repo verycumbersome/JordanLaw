@@ -176,12 +176,12 @@
   background-position: center center;
   background-position: bottom;
   color: white;
-  height: 70vh;
+  height: 80vh;
 }
 
 /* line 17, ../sass/_home.scss */
 #content {
-  min-height: 40vh;
+  min-height: 20vh;
 }
 /* line 19, ../sass/_home.scss */
 #content strong {
@@ -654,7 +654,7 @@ html, body {
   height: 100vh !important;
   color: white;
   position: relative;
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -768,7 +768,7 @@ html, body {
 /* line 179, ../sass/_people.scss */
 #toolbox {
   background-attachment: fixed;
-  background-image: url("http://lawofficeclouds.com/wp-content/uploads/2014/12/conference-room.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

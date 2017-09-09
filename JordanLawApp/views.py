@@ -11,7 +11,7 @@ def index(request):
 
 
 def susanjordan(request):
-    return render(request, "people/susanjordan.html", {})
+    return render(request, "people/test.html", {})
 
 
 def cindyvance(request):

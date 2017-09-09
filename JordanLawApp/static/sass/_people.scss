@@ -78,7 +78,7 @@ html, body {
     //     @include blurs(6px);
     // }
 
-    @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 
     background-attachment: fixed;
 }
@@ -185,7 +185,7 @@ html, body {
     }
 
     background-attachment: fixed;
-    @include backgroundImage("http://lawofficeclouds.com/wp-content/uploads/2014/12/conference-room.jpg");
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
 }
 
 #resume {

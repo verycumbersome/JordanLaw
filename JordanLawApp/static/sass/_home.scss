@@ -11,11 +11,11 @@ $underline: '\00a0';
     @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
     background-position: bottom;
     color: white;
-    height: 70vh;
+    height: 80vh;
 }
 
 #content {
-    min-height: 40vh;
+    min-height: 20vh;
     strong {
         color: rgb(0,53,95);
     }
