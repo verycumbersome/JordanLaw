@@ -31,14 +31,11 @@ $(window).scroll(function(event){
         $(".navbar").addClass('scrolldown');
         $(".navbar").addClass('navbar-inverse');
         $(".navbar").removeClass('navbar-light');
-        // $("#missionstatement").addClass('slideInUp');
-        // $("#missionstatement").addClass('scrolldown');
     }
     else{
         $(".navbar").removeClass('scrolldown');
         $(".navbar").removeClass('navbar-inverse');
         $(".navbar").addClass('navbar-light');
-        // $("#missionstatement").removeClass('scrolldown');
 
     }
 

@@ -3,8 +3,8 @@
 $underline: '\00a0';
 
 #index {
-    // color: white;
     position: relative;
+    overflow: hidden;
 }
 
 #header {
@@ -15,7 +15,13 @@ $underline: '\00a0';
 }
 
 #content {
-    height: 100vh;
+    strong {
+        color: rgb(0,53,95);
+    }
+
+    h3 {
+        font-weight: bold;
+    }
 
     h2 {
         text-align: center;
@@ -24,104 +30,11 @@ $underline: '\00a0';
         margin: auto;
         color: black;
         bottom: 0;
-        /*background-color: rgba(50, 50, 50, 0.7);*/
     }
 }
 
-.message {
-    line-height: 0.69;
-    top: 0vh;
-    // text-align: center !important;
-
-    h1 {
-        color: white;
-        font-size: 4.5em;
-        line-height: 0.75;
-        font-weight: 400;
+@media (min-width: 640px) {
+    .call-button {
+        display: none;
     }
-
-    h2 {
-        color: white;
-        font-size: 2.8em;
-        line-height: 0.75;
-        font-weight: 400;
-    }
-    #left-message {
-        margin-left: 30vw;
-        // border-bottom: 2px solid #fff;
-    }
-
-    #right-message {
-        margin-left: 40vw;
-        // border-bottom: 2px solid #fff;
-    }
-}
-
-@media (max-width: 640px) {
-    .message {
-
-        h1 {
-            font-size: 2.8em;
-        }
-
-        #left-message {
-            margin-left: 0vw;
-            // border-bottom: 2px solid #fff;
-        }
-
-        #right-message {
-            margin-left: 0vw;
-            // border-bottom: 2px solid #fff;
-        }
-    }
-}
-
-
-@media only screen and (max-width: 640px) {
-
-#title {
-    border-bottom: 0px;
-    text-align: center;
-    left: 0;
-    margin: auto;
-    padding-top: 8px;
-}
-
-}
-//
-// #header {
-//     top: 0;
-//     color: white;
-//     position: fixed;
-//     display: inline-block;
-//     width: 100%;
-//     z-index: 1;
-//     transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-// }
-
-#statement {
-    min-height: 50vh;
-    overflow: hidden;
-}
-
-#missionstatement {
-    line-height: 30px;
-    font-size: 1.2em;
-    color: #fff;
-    margin: auto;
-    text-align: center;
-    padding: 20px;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-    visibility: visible;
-    position: relative;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 85vw;
-    // background-color: lighten( rgba(0,53,95, 1), 10% );
-    border-radius: 30px 0 30px 0;
-}
-
-#missionstatement.scrolldown {
-    // margin-top: 100px;
 }
