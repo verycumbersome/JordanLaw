@@ -25,7 +25,7 @@ SECRET_KEY = '75s=0tlj$6994t=ko9!*^#+g-0tn_j2875p(29xu16%36t(ipt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'matthewjordan.herokuapp.com']
 
 
 # Application definition
@@ -121,8 +121,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(PROJECT_DIR, 'static')
