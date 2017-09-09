@@ -11,11 +11,15 @@ def index(request):
 
 
 def susanjordan(request):
-    return render(request, "people/test.html", {})
+    return render(request, "people/susanjordan.html", {})
 
 
 def cindyvance(request):
     return render(request, 'people/cindyvance.html', {})
+
+
+def apriljohnson(request):
+    return render(request, 'people/apriljohnson.html', {})
 
 
 def blog(request):

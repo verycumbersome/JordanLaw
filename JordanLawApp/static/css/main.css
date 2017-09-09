@@ -170,11 +170,11 @@
 
 /* line 10, ../sass/_home.scss */
 #header {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
+  background-image: url("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  background-position: bottom;
+  background-position: center;
   color: white;
   height: 80vh;
 }
@@ -843,7 +843,6 @@ a {
 
 /* line 35, ../sass/main.scss */
 .navbar-brand img {
-  border-radius: 0 0 15px 0;
   max-width: 400px;
   width: 95%;
 }

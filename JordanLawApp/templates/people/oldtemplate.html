@@ -1,19 +1,34 @@
-{% extends 'people/persontemplate.html' %}
+{% extends 'base.html' %}
 
 {% load static %}
 
-{% block person-image %}
-    <img class='profile-pic' src='{% static 'images/susan.jpg' %}'></img>
-{% endblock %}
+{% block people-tab %}
+active
+{% endblock people-tab %}
 
-{% block person-card %}
-    <div class='link name'><h2>Susan Ezzy Jordan</h2></div>
-    <div class='link resume'><h4>Attorney at Law</h4></div>
-    <div class='link email'><h5><a class='btn btn-primary fa fa-envelope-o' href='mailto:susanjordan.attorney@gmail.com'> susanjordan.attorney@gmail.com<a></h5></div>
-    <div class='link twitter'><h5><a class='btn btn-primary fa fa-phone' href='https://twitter.com/jordanma1998'> 541-554-7684</a></h5></div>
-{% endblock %}
-
-{% block person-about %}
+{% block content %}
+<div class='section main-content'>
+    <div class='container-fluid person-card animated slideInUp row'>
+        <div class='flip-container'>
+            <img class='profile-pic' src='{% static 'images/susan.jpg' %}'></img>
+        </div>
+        <div class='text-container'>
+            <div class='link name'><h2>Susan Jordan</h2></div>
+            <div class='link resume'><h4>Attorney at Law</h4></div>
+            <div class='link email'><h5><a class='btn btn-primary fa fa-envelope-o' href='mailto:susanjordan.attorney@gmail.com'> susanjordan.attorney@gmail.com<a></h5></div>
+            <div class='link twitter'><h5><a class='btn btn-primary fa fa-phone' href='https://twitter.com/jordanma1998'> 541-554-7684</a></h5></div>
+        </div>
+    </div>
+    <div class="animated fadeInRight autoscroll">
+            <div class=scrollbox>
+                <a class="fa fa-square-o scrolldown" href="#about-me"></a>
+                <div class='scrolldownarrow'>
+                    <a class="fa fa-chevron-down"></a>
+                </div>
+            </div>
+    </div>
+</div>
+<div id='about-me' class='section'>
     <h1>About Susan</h1>
     <p class='paragraph-text'>
         Susan has been engaged in private practice in Lane County for seventeen years.  After
@@ -40,9 +55,11 @@
     include real property issues, probate, estate planning, and civil litigation.  Susan also handles
     adoptions.  Susan has been married for nineteen years and has two children.
     </p>
-{% endblock %}
 
-{% block person-works %}
+</div>
+
+<div id='works' class='section'>
+    <h1>Works</h1>
     <h4><a href='#'>Lane County Juvenile Law Consortium Member</a></h4>
     <p class='paragraph-text'>
         Susan has been a member of the Lane County Juvenile Law Consortium since 2007.  She
@@ -73,10 +90,9 @@
         legal education in her practice areas and membership in the Juvenile and Probate sections of the
         Oregon State Bar.
     </p>
-{% endblock %}
 
-{% block person-toolkit %}
-<!-- <div id='toolbox' class='section'>
+</div>
+<div id='toolbox' class='section'>
     <h1>Toolbox</h1>
     <div class='container'>
         <div class="row">
@@ -92,7 +108,7 @@
                 <div class="card">
                     <h3 class="card-header">Real Property</h3>
                     <div class="card-block">
-                        <p class="card-text">Susan has over seventeen years of experience in handling real property matters and disputes.</p>
+                        <p class="card-text">Susan has over seventeen years of experience in handling real property matters and disputes.  She has tried and won cases in connection with adverse possession and residential tenancies, drafted land sale contracts and contracts for the sale of real property, and regularly reviews and advises her clients in connection with real property transaction documents and litigation issues.</p>
                     </div>
                 </div>
             </div>
@@ -132,39 +148,39 @@
             </div>
         </div>
     </div>
-</div> -->
-{% endblock %}
-
-{% block person-qualifications %}
-<div class="card" style="width: 80vw;">
-    <div class="card-block">
-        <h4 class="card-title">Qualifications</h4>
-        <h6 class="card-subtitle mb-2">Attorney at Law</h6>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-            </ul>
-    </div>
-    <div class="card-block">
-        <h6 class="card-subtitle mb-2">Legal works</h6>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-            </ul>
-    </div>
-    <div class="card-block">
-        <h6 class="card-subtitle mb-2">Experience</h6>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-                <li class="list-group-item">[insert qual here]</li>
-            </ul>
-    </div>
-    <div class="card-block">
-        <a href="tel:541-554-7684" class="btn btn-primary fa fa-phone"> Phone</a>
-        <a href="mailto:susanjordan.attorney@gmail.com" class="btn btn-default fa fa-envelope-o"> Contact</a>
+</div>
+<div id='resume' class='section'>
+    <h1>Resume</h1>
+    <div class="card" style="width: 80vw;">
+        <div class="card-block">
+            <h4 class="card-title">Resume</h4>
+            <h6 class="card-subtitle mb-2">Web Developer</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Full stack developer capable of building a dynamic webpage from the ground up -- from concept, navigation, layout and programming to UX and design.</li>
+                    <li class="list-group-item">Skilled at writing efficient and readable code using reliable and up-to-date coding standards.</li>
+                    <li class="list-group-item">Dedicated, passionate and eager to learn as well as being versed in an array of frameworks and languages.</li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <h6 class="card-subtitle mb-2">Technical Toolbox</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Web Tools: Javascript, Jquery, HTML, CSS3, SCSS, Bootstrap, React JS, Python, Firebase, Github, Apache, Django, C9, WSGI, Wordpress, Jekyl, DNS Hookup</li>
+                    <li class="list-group-item">Development Tools: C++, Java, OpenCV, Vim, .NET, Unix, Unix Shell, Windows 7/8/10, OOP Language Structure, SQLite, PID</li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <h6 class="card-subtitle mb-2">Experience</h6>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">4 years experience as senior software developer on the South Eugene Robotics Team(Java, OpenCv, Python, Unix Shell, WPI library, PID, OOP)</li>
+                    <li class="list-group-item">2 years personal freelance web development(Python, HTML, CSS3, SCSS, Django, Firebase, SQLite)</li>
+                    <li class="list-group-item">Extensive personal programming experience in languages specifically Python and C++</li>
+                    <li class="list-group-item">Developed dynamic site from scratch using Django, WSGI hosting, and basic Web Dev tools (HTML, CSS, Javascript, Jquery). Dynamic site included user accounts, blog posts, file uploads, data storage, static file hosting, with an optimized UX using bootstrap and Django. </li>
+                </ul>
+        </div>
+        <div class="card-block">
+            <a href="https://github.com/verycumbersome" class="btn btn-primary fa fa-phone"> Phone</a>
+            <a href="mailto:matthewsages@gmail.com" class="btn btn-default fa fa-envelope-o"> Contact</a>
+        </div>
     </div>
 </div>
 {% endblock %}

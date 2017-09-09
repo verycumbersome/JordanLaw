@@ -8,8 +8,8 @@ $underline: '\00a0';
 }
 
 #header {
-    @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
-    background-position: bottom;
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
+    background-position: center;
     color: white;
     height: 80vh;
 }
