@@ -3,37 +3,29 @@
 $underline: '\00a0';
 
 #index {
+    // color: white;
+    position: relative;
+}
+
+#header {
     @include backgroundImage("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
     background-position: bottom;
     color: white;
-    position: relative;
-
-    &:before {
-        content: '';
-    	position: absolute;
-        vertical-align: bottom;
-    	top: 0;
-    	right: 0;
-    	bottom: 0;
-    	left: 0;
-    	background-image: linear-gradient(to bottom,rgba(0,0,0,0),#000);
-    	opacity: 0.6;
-  }
-
+    height: 60vh;
 }
 
 #content {
-    height: 100vh !important;
-}
+    height: 100vh;
 
-#content h2 {
-    text-align: center;
-    font-size: 40px;
-    padding: 10px;
-    margin: auto;
-    color: white;
-    bottom: 0;
-    /*background-color: rgba(50, 50, 50, 0.7);*/
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        padding: 10px;
+        margin: auto;
+        color: black;
+        bottom: 0;
+        /*background-color: rgba(50, 50, 50, 0.7);*/
+    }
 }
 
 .message {

@@ -20,7 +20,9 @@
     <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js' integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn' crossorigin='anonymous'></script>
     <script type='text/javascript' src='{% static 'javascript/main.js' %}'></script>
 </head>
-<nav class='navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse animated slideInDown'>
+
+<nav class='navbar fixed-top navbar-toggleable-md navbar-light bg-faded animated slideInDown'>
+
     <button class='navbar-toggler navbar-toggler-right' type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation'>
         <span class='navbar-toggler-icon'></span>
     </button>
@@ -43,13 +45,16 @@
             <li class='nav-item'>
                 <a class='nav-link' href='#'>Practices</a>
             </li>
+            <li class='nav-item'>
+                <a class='nav-link {% block blog-tab %}{% endblock %}' href='{% url 'JordanLawApp:blog' %}'>Blog</a>
+            </li>
         </ul>
         <ul class='navbar-nav'>
             <li class='nav-item'>
-                <a class='nav-link {% block blog-tab %}{% endblock %}' href='{% url 'JordanLawApp:blog' %}'><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Blog</a>
+                <a class="btn btn-primary" href='tel:541-554-7684'><i class="fa fa-phone" aria-hidden="true"></i> Call</a>
             </li>
             <li class='nav-item'>
-                <a class='nav-link' href='mailto:susanjordan.attorney@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a>
+                <a class='nav-link' href='mailto:susanjordan.attorney@gmail.com'><i class="fa fa-envelope-o" aria-hidden="true"></i> Email</a>
             </li>
         </ul>
     </div>

@@ -164,87 +164,79 @@
 
 /* line 5, ../sass/_home.scss */
 #index {
+  position: relative;
+}
+
+/* line 10, ../sass/_home.scss */
+#header {
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Oregon_Forest_and_River_%2817151814955%29.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-position: bottom;
   color: white;
-  position: relative;
-}
-/* line 11, ../sass/_home.scss */
-#index:before {
-  content: '';
-  position: absolute;
-  vertical-align: bottom;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: linear-gradient(to bottom, transparent, #000);
-  opacity: 0.6;
+  height: 60vh;
 }
 
-/* line 25, ../sass/_home.scss */
+/* line 17, ../sass/_home.scss */
 #content {
-  height: 100vh !important;
+  height: 100vh;
 }
-
-/* line 29, ../sass/_home.scss */
+/* line 20, ../sass/_home.scss */
 #content h2 {
   text-align: center;
   font-size: 40px;
   padding: 10px;
   margin: auto;
-  color: white;
+  color: black;
   bottom: 0;
   /*background-color: rgba(50, 50, 50, 0.7);*/
 }
 
-/* line 39, ../sass/_home.scss */
+/* line 31, ../sass/_home.scss */
 .message {
   line-height: 0.69;
   top: 0vh;
 }
-/* line 44, ../sass/_home.scss */
+/* line 36, ../sass/_home.scss */
 .message h1 {
   color: white;
   font-size: 4.5em;
   line-height: 0.75;
   font-weight: 400;
 }
-/* line 51, ../sass/_home.scss */
+/* line 43, ../sass/_home.scss */
 .message h2 {
   color: white;
   font-size: 2.8em;
   line-height: 0.75;
   font-weight: 400;
 }
-/* line 57, ../sass/_home.scss */
+/* line 49, ../sass/_home.scss */
 .message #left-message {
   margin-left: 30vw;
 }
-/* line 62, ../sass/_home.scss */
+/* line 54, ../sass/_home.scss */
 .message #right-message {
   margin-left: 40vw;
 }
 
 @media (max-width: 640px) {
-  /* line 71, ../sass/_home.scss */
+  /* line 63, ../sass/_home.scss */
   .message h1 {
     font-size: 2.8em;
   }
-  /* line 75, ../sass/_home.scss */
+  /* line 67, ../sass/_home.scss */
   .message #left-message {
     margin-left: 0vw;
   }
-  /* line 80, ../sass/_home.scss */
+  /* line 72, ../sass/_home.scss */
   .message #right-message {
     margin-left: 0vw;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 90, ../sass/_home.scss */
+  /* line 82, ../sass/_home.scss */
   #title {
     border-bottom: 0px;
     text-align: center;
@@ -253,13 +245,13 @@
     padding-top: 8px;
   }
 }
-/* line 110, ../sass/_home.scss */
+/* line 102, ../sass/_home.scss */
 #statement {
   min-height: 50vh;
   overflow: hidden;
 }
 
-/* line 115, ../sass/_home.scss */
+/* line 107, ../sass/_home.scss */
 #missionstatement {
   line-height: 30px;
   font-size: 1.2em;
@@ -901,7 +893,6 @@ a {
 /* line 20, ../sass/main.scss */
 .navbar {
   border: 0px;
-  background-color: black !important;
   min-height: 0;
   -o-transition: 0.25s;
   -ms-transition: 0.25s;
