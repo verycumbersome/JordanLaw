@@ -15,6 +15,10 @@
         line-height: 0.75;
         font-weight: 400;
     }
+
+    h3 {
+        font-weight: bold;
+    }
 }
 
 #blog-posts {
@@ -23,9 +27,8 @@
     }
 
     .card {
-        height: 50vh;
+        // height: 50vh;
         max-width: 100%;
-        text-overflow: ellipsis;
         border: 0px;
         padding: 20px;
         @include transitions(0.5s);
@@ -44,6 +47,9 @@
 
     .list-group-item {
         overflow: hidden;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .social-links {
