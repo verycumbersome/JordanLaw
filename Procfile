@@ -1,1 +1,1 @@
-web: gunicorn MatthewJordan.wsgi --log-file -
+web: gunicorn JordanLaw.wsgi --log-file -
