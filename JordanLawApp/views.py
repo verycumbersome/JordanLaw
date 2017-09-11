@@ -36,3 +36,11 @@ def blog(request):
         blog_posts = paginator.page(paginator.num_pages)
 
     return render(request, "blog.html", {'blog_posts':blog_posts})
+
+def blogpost(request, post):
+    if BlogPost.objects.filter(id=post):
+        blogpost = BlogPost.objects.filter(id=post).get()
+    else:
+        return render(request, '404.html', {'blogpost': blogpost})
+
+    return render(request, 'blog/post.html', {'blogpost': blogpost})

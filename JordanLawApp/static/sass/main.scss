@@ -17,6 +17,10 @@ a {
     @include transitions(0.5s);
 }
 
+strong {
+    color: rgb(0,53,95);
+}
+
 .navbar {
     border: 0px;
     // background-color: black !important;
@@ -54,6 +58,13 @@ a {
     width: 75% !important;
     float: none;
   }
+}
+
+.header {
+    @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
+    background-position: center;
+    color: white;
+    height: 80vh;
 }
 
 .autoscroll {
