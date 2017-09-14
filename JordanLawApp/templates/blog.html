@@ -15,7 +15,7 @@
             {% for post in blog_posts %}
             <div class='row'>
                 <div class="col-md-8">
-                    <div class="card">
+                    <div class="card" style="width: 80vw;">
                         <h3 class="card-title">{{post.title}}</h3>
                         <h6 class="card-subtitle mb-2">posted <strong>{{post.created_date}}</strong></h6>
                             <ul class="list-group list-group-flush">
@@ -25,7 +25,7 @@
                             <a href="{% url 'JordanLawApp:blogpost' post.id %}" class="btn btn-primary">Read More</a>
                             <div class='social-links'>
                                 <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-                                    <!-- <a class="a2a_dd" href="https://www.addtoany.com/share"></a> -->
+                                    <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
                                     <a class="a2a_button_facebook"></a>
                                     <a class="a2a_button_twitter"></a>
                                     <a class="a2a_button_google_plus"></a>
