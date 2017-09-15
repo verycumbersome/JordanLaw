@@ -63,6 +63,7 @@ strong {
 .header {
     @include backgroundImage("../images/Scenic Southern Oregon 2013  Beautifulvista.jpg");
     background-position: center;
+    text-align: center;
     color: white;
     height: 80vh;
 }
