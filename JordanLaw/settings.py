@@ -25,7 +25,11 @@ SECRET_KEY = '75s=0tlj$6994t=ko9!*^#+g-0tn_j2875p(29xu16%36t(ipt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'jordanlaw.herokuapp.com', 'jordanlawpc.com']
+ALLOWED_HOSTS = ['localhost',
+                 '127.0.0.1',
+                 'jordanlaw.herokuapp.com',
+                 'jordanlawpc.com',
+                 ]
 
 
 # Application definition
