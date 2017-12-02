@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['localhost',
                  '127.0.0.1',
                  'jordanlaw.herokuapp.com',
                  'jordanlawpc.com',
+                 'www.jordanlawpc.com',
                  ]
 
 
